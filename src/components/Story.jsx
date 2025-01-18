@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import Button from "./Button";
 import AnimatedTitle from "./AnimatedTitle";
+import './Story.css'
 
 const FloatingImage = () => {
   const frameRef = useRef(null);
@@ -69,7 +70,7 @@ const FloatingImage = () => {
         window.innerHeight + window.scrollY >=
         document.documentElement.scrollHeight - 100
       ) {
-        loadMoreImages();
+        // loadMoreImages();
       }
     };
 
@@ -78,6 +79,8 @@ const FloatingImage = () => {
     // Cleanup
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isLoading]);
+
+
 
   return (
     <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
@@ -95,7 +98,7 @@ const FloatingImage = () => {
           <div className="story-img-container">
             <div className="story-img-mask">
               <div className="story-img-content">
-              <div className="flex flex-row overflow-hidden w-auto">
+                <div className="flex flex-row overflow-hidden w-auto">
                   <img
                     ref={frameRef}
                     onMouseMove={handleMouseMove}
@@ -106,29 +109,50 @@ const FloatingImage = () => {
                     alt="entrance.webp"
                     className="object-contain"
                   />
-                </div> 
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Dynamically Rendered Images */}
-        <div className="mt-10 w-full flex flex-wrap justify-center gap-4">
-          {images.map((image, index) => (
-            <img
-              key={index}
-              src={image}
-              alt={`gallery-${index + 1}.webp`}
-              className="w-60 h-60 object-cover rounded-lg shadow-lg"
-            />
-          ))}
+        {/* <div className="mt-10 w-full flex flex-wrap justify-center gap-4"> */}
+        <div class="stock-ticker">
+          <ul>
+            {images.map((image, index) => (
+              <li><img
+                // class=""
+                key={index}
+                src={image}
+                alt={`gallery-${index + 1}.webp`}
+                className="w-60 h-60 object-cover rounded-lg shadow-lg Rishi_img"
+              />
+              </li>
+            ))}
+
+          </ul>
+
+          <ul>
+            {images.map((image, index) => (
+              <li><img
+                // class=""
+                key={index}
+                src={image}
+                alt={`gallery-${index + 1}.webp`}
+                className="w-60 h-60 object-cover rounded-lg shadow-lg Rishi_img"
+              />
+              </li>
+            ))}
+
+          </ul>
         </div>
+
 
         {isLoading && (
           <div className="mt-5 text-white">Loading more images...</div>
         )}
 
-        <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
+        {/* <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
               Where realms converge, lies Zentry and the boundless pillar.
@@ -142,10 +166,11 @@ const FloatingImage = () => {
               containerClass="mt-5"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
 };
+
 
 export default FloatingImage;
