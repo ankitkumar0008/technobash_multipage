@@ -1,4 +1,6 @@
   .stock-ticker {
+      position :absolute;
+      bottom: 60%;
       font-size: 15px;
       padding-block: 8px;
 
@@ -31,3 +33,63 @@
           transform: translateX(calc(-100% - var(--gap)));
       }
   }
+.layer{
+    position: relative;
+}
+.stock-ticker2 {
+    position :absolute;
+    bottom: 41%;
+    font-size: 15px;
+    padding-block: 8px;
+
+    overflow: hidden;
+    user-select: none;
+
+    --gap: 20px;
+    display: flex;
+    gap: var(--gap);
+}
+.stock-ticker2 ul {
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+
+    animation: scroll 20s linear infinite;
+}
+
+.stock-ticker2:hover ul {
+    animation-play-state: paused;
+}
+
+.stock-ticker3 {
+    position :absolute;
+    bottom: 22%;
+    font-size: 15px;
+    padding-block: 8px;
+
+    overflow: hidden;
+    user-select: none;
+
+    --gap: 20px;
+    display: flex;
+    gap: var(--gap);
+}
+.stock-ticker3 ul {
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+
+    animation: scroll 20s linear infinite;
+}
+
+.stock-ticker3:hover ul {
+    animation-play-state: paused;
+}
