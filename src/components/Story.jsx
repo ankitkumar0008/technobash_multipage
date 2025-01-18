@@ -1,12 +1,14 @@
+import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
-import { useRef } from "react";
-
 import Button from "./Button";
 import AnimatedTitle from "./AnimatedTitle";
 
 const FloatingImage = () => {
   const frameRef = useRef(null);
+  const [images, setImages] = useState(Array.from({ length: 10 }, (_, i) => `/img/gallery-${i + 1}.webp`));
+  const [isLoading, setIsLoading] = useState(false);
 
+  // Handle mouse move for 3D effect
   const handleMouseMove = (e) => {
     const { clientX, clientY } = e;
     const element = frameRef.current;
@@ -45,6 +47,38 @@ const FloatingImage = () => {
     }
   };
 
+  // Load more images when scrolling
+  const loadMoreImages = () => {
+    if (isLoading) return;
+
+    setIsLoading(true);
+
+    setTimeout(() => {
+      setImages((prevImages) => [
+        ...prevImages,
+        ...Array.from({ length: 10 }, (_, i) => `/img/gallery-${prevImages.length + i + 1}.webp`),
+      ]);
+      setIsLoading(false);
+    }, 1000); // Simulated API call delay
+  };
+
+  // Handle scroll event
+  useEffect(() => {
+    const handleScroll = () => {
+      if (
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 100
+      ) {
+        loadMoreImages();
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isLoading]);
+
   return (
     <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
       <div className="flex size-full flex-col items-center py-10 pb-24">
@@ -61,47 +95,38 @@ const FloatingImage = () => {
           <div className="story-img-container">
             <div className="story-img-mask">
               <div className="story-img-content">
-                <img
-                  ref={frameRef}
-                  onMouseMove={handleMouseMove}
-                  onMouseLeave={handleMouseLeave}
-                  onMouseUp={handleMouseLeave}
-                  onMouseEnter={handleMouseLeave}
-                  src="/img/entrance.webp"
-                  alt="entrance.webp"
-                  className="object-contain"
-                />
+              <div className="flex flex-row overflow-hidden w-auto">
+                  <img
+                    ref={frameRef}
+                    onMouseMove={handleMouseMove}
+                    onMouseLeave={handleMouseLeave}
+                    onMouseUp={handleMouseLeave}
+                    onMouseEnter={handleMouseLeave}
+                    src="/img/entrance.webp"
+                    alt="entrance.webp"
+                    className="object-contain"
+                  />
+                </div> 
               </div>
             </div>
-
-            {/* for the rounded corner */}
-            <svg
-              className="invisible absolute size-0"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <defs>
-                <filter id="flt_tag">
-                  <feGaussianBlur
-                    in="SourceGraphic"
-                    stdDeviation="8"
-                    result="blur"
-                  />
-                  <feColorMatrix
-                    in="blur"
-                    mode="matrix"
-                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                    result="flt_tag"
-                  />
-                  <feComposite
-                    in="SourceGraphic"
-                    in2="flt_tag"
-                    operator="atop"
-                  />
-                </filter>
-              </defs>
-            </svg>
           </div>
         </div>
+
+        {/* Dynamically Rendered Images */}
+        <div className="mt-10 w-full flex flex-wrap justify-center gap-4">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`gallery-${index + 1}.webp`}
+              className="w-60 h-60 object-cover rounded-lg shadow-lg"
+            />
+          ))}
+        </div>
+
+        {isLoading && (
+          <div className="mt-5 text-white">Loading more images...</div>
+        )}
 
         <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
