@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { TiLocationArrow } from "react-icons/ti";
+import "./features.css";
 
 export const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
@@ -124,7 +125,7 @@ const Features = () => (
         />
       </BentoTilt>
 
-      <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
+      <div className="grid h-[200vh] w-full grid-cols-2 grid-rows-5 gap-7">
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
             src="videos/callofduty.mp4"
@@ -146,7 +147,7 @@ const Features = () => (
                 FLAG<b>-</b>HUNT
               </>
             }
-            description="lorem10"
+            description="Solve challenging clues and navigate through obstacles to win."
             isComingSoon
           />
         </BentoTilt>
@@ -163,44 +164,71 @@ const Features = () => (
             isComingSoon
           />
         </BentoTilt>
-        {/* <BentoTilt className="bento-tilt_2">
-        <BentoCard
-            src="videos/feature-5.mp4"
-            title={
-              <>
-                EcoVision 
-              </>
-            }
-            description="To create a website with innovative and creative designs."
-            isComingSoon
-          />
-        </BentoTilt> */}
 
-        {/* <BentoTilt className="bento-tilt_2">
+        <BentoTilt className="bento-tilt_1 ms-32 md:col-span-1 md:ms-0">
           <BentoCard
             src="videos/feature-5.mp4"
             title={
               <>
-                Digital Poster Competition
+                code <b>fi</b>esta
               </>
             }
-            description="To create a website with innovative and creative designs."
-            isComingSoon
-          />
-        </BentoTilt> */}
-      </div>
-      <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
-          <BentoCard
-            src="/videos/feature-1.mp4"
-            title={
-              <>
-                prep-<b>a</b>-thon
-              </>
-            }
-            description="PREP-A-THON is a hackathon that focuses on basic interview aspects for the company to hire. This event will contain all the topics needed for preparation of a company. The questions will be set by the sponsor company."
+            description="Come join us for a thrilling coding competition to solve challenging problems and showcase your programming skills."
             isComingSoon
           />
         </BentoTilt>
+
+        <BentoTilt className="bento-tilt_1  md:col-span-1  row-span-1 md:row-span-2">
+          <BentoCard
+            src="videos/feature-6.mp4"
+            title={
+              <>
+                art<b>sy</b> cra<b>ft</b>
+              </>
+            }
+            description="Unleash your artistic creativity in this hands-on crafting event."
+            isComingSoon
+          />
+        </BentoTilt>
+
+        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+          <BentoCard
+            src="videos/feature-7.mp4"
+            title={
+              <>
+                rob<b>o</b> quest
+              </>
+            }
+            description="Build and program robots to compete in thrilling challenges."
+            isComingSoon
+          />
+        </BentoTilt>
+        <BentoTilt className="bento-tilt_1 parallelchild row-span-1 md:col-span-1 md:row-span-2">
+          <BentoCard
+            src="videos/feature-8.mp4"
+            title={
+              <>
+                che<b>f</b> battle
+              </>
+            }
+            description="Showcase your culinary skills and compete to win exciting prizes."
+            isComingSoon
+          />
+        </BentoTilt>
+
+        <BentoTilt className="bento-tilt_1 parallelchild row-span-1 ms-32 md:col-span-1 md:ms-0">
+          <BentoCard
+            src="videos/feature-9.mp4"
+            title={
+              <>
+                st<b>re</b>am play
+              </>
+            }
+            description="Dive into the world of streaming and compete with your content creation skills."
+            isComingSoon
+          />
+        </BentoTilt>
+      </div>
     </div>
   </section>
 );

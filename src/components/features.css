@@ -1,0 +1,6 @@
+.parallel{
+    display: flex;
+}
+.parallelchild{
+    height: 385px;
+}

@@ -1,6 +1,6 @@
   .stock-ticker {
       position :absolute;
-      bottom: 60%;
+      bottom: 55%;
       font-size: 15px;
       padding-block: 8px;
 
@@ -38,7 +38,7 @@
 }
 .stock-ticker2 {
     position :absolute;
-    bottom: 41%;
+    bottom: 30%;
     font-size: 15px;
     padding-block: 8px;
 
@@ -67,7 +67,7 @@
 
 .stock-ticker3 {
     position :absolute;
-    bottom: 22%;
+    bottom: 5%;
     font-size: 15px;
     padding-block: 8px;
 
@@ -93,3 +93,57 @@
 .stock-ticker3:hover ul {
     animation-play-state: paused;
 }
+
+
+
+/* First Stock Ticker: Right to Left (No changes) */
+.stock-ticker ul {
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+    animation: scroll 20s linear infinite; /* Right to Left */
+}
+
+/* Second Stock Ticker: Left to Right */
+.stock-ticker2 ul {
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+    animation: scroll-reverse 20s linear infinite; /* Left to Right */
+}
+
+/* Third Stock Ticker: Right to Left (No changes) */
+.stock-ticker3 ul {
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+    animation: scroll 20s linear infinite; /* Right to Left */
+}
+
+/* Keyframes */
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+@keyframes scroll-reverse {
+    from {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+    to {
+        transform: translateX(0);
+    }
+}  
