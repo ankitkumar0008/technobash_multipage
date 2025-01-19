@@ -1,54 +1,42 @@
 import AnimatedTitle from "./AnimatedTitle";
-import Button from "./Button";
-
-const ImageClipBox = ({ src, clipClass }) => (
-  <div className={clipClass}>
-    <img src={src} />
-  </div>
-);
 
 const Contact = () => {
+  const gridImages = [
+    "/img/grid1.webp",
+    "/img/grid2.webp",
+    "/img/grid3.webp",
+    "/img/grid4.webp",
+    "/img/grid5.webp",
+    "/img/grid6.webp",
+  ];
+
   return (
-    <div
-      id="contact"
-      className="my-20 min-h-96 w-screen px-10"
-    >
-      <div className="relative rounded-lg bg-black py-64 text-blue-50 sm:overflow-hidden -mx-10">
-        {/* Background images */}
-        <div className="absolute -left-20 top-0 hidden h-full w-72 overflow-hidden sm:block lg:left-20 lg:w-96">
-          <ImageClipBox
-            src="/img/contact-1.webp"
-            clipClass="contact-clip-path-1"
-          />
-          <ImageClipBox
-            src="/img/contact-2.webp"
-            clipClass="contact-clip-path-2 lg:translate-y-40 translate-y-60"
-          />
-        </div>
-
-        <div className="absolute -top-40 left-20 w-60 sm:top-1/2 md:left-auto md:right-10 lg:top-20 lg:w-80">
-          <ImageClipBox
-            src="/img/swordman-partial.webp"
-            clipClass="absolute md:scale-125"
-          />
-          <ImageClipBox
-            src="/img/swordman.webp"
-            clipClass="sword-man-clip-path md:scale-125"
-          />
-        </div>
-
-        {/* Content Section directly inside the black background */}
-        <div className="flex flex-col items-center text-center relative z-10">
-          <p className="mb-10 font-general text-[10px] uppercase">
-            Technobash
-          </p>
+    <div id="contact" className="my-20 min-h-96 w-screen px-10">
+      <div className="relative rounded-lg bg-black py-64 text-blue-50 -mx-10">
+        {/* Title Section */}
+        <div className="flex flex-col items-center text-center relative z-10 -translate-y-56">
+          <p className="mb-5 font-general text-[10px] uppercase">Technobash</p>
 
           <AnimatedTitle
-            title="sponsors"
+            title="sponsors contact me hai"
             className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
           />
+        </div>
 
-          <Button title="contact us" containerClass="mt-10 cursor-pointer" />
+        {/* Grid Section */}
+        <div className="mt-20 grid grid-cols-1 gap-4 px-10 sm:grid-cols-2 lg:grid-cols-3 relative z-10">
+          {gridImages.map((image, index) => (
+            <div
+              key={index}
+              className="overflow-hidden rounded-lg border border-gray-700 shadow-lg"
+            >
+              <img
+                src={image}
+                alt={`Grid ${index + 1}`}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>

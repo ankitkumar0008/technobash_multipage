@@ -1,0 +1,186 @@
+/* Footer with Courses */
+.footer {
+  background-color: #5542ff;
+  color: black;
+  padding: 30px 0;
+}
+
+.ag-courses_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.ag-courses_item {
+  flex-basis: calc(33.33333% - 20px);  /* Ensures all cards take up the same space */
+  margin-bottom: 20px;
+  border-radius: 28px;
+  overflow: hidden;
+  background-color: #121212;
+  position: relative;
+  min-height: 320px;  /* Ensures each card has the same height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.ag-courses-item_link {
+  display: block;
+  padding: 20px;
+  background-color: #121212;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  z-index: 2; /* Keeps the text visible above background */
+  flex-grow: 1;  /* Ensures that the content inside the card takes up available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  transform: scale(3); /* Reduce scale to prevent covering text */
+  z-index: 1; /* Moves the background behind the text */
+}
+
+.ag-courses-item_title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+  z-index: 2; /* Keeps the title above background */
+  position: relative;
+  flex-grow: 1;
+}
+
+.ag-courses-item_date-box {
+  font-size: 16px;
+  z-index: 2;
+}
+
+.ag-courses-item_date {
+  font-weight: bold;
+  color: #f9b234;
+  transition: color 0.5s ease;
+}
+
+/* Background Circle Styles */
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  z-index: 1; /* Moves background behind text */
+}
+
+/* Color variations for different courses */
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #3ecd5e;
+}
+
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #e44002;
+}
+
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+  background-color: #952aff;
+}
+
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+  background-color: #cd3e94;
+}
+
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+  background-color: #4c49ea;
+}
+
+/* Social icons on the right side of the card */
+.ag-courses_item .social-icons {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ag-courses_item .social-icons a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.ag-courses_item .social-icons a:hover {
+  color: #f9b234;
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+  .ag-courses_item {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 479px) {
+  .ag-courses_item {
+    flex-basis: 100%;
+  }
+}
+
+/* Footer Social Links */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-content a {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-content a:hover {
+  color: #f9b234;
+}
+/* Social icons on the right side of the card */
+.ag-courses_item {
+  position: relative;
+}
+
+.social-icons {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increase the gap between icons */
+  align-items: center; /* Align icons properly */
+  z-index: 3;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 30px; /* Adjust icon size to ensure visibility */
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #f9b234; /* Change color on hover */
+}
+
+.ag-courses_item .ag-courses-item_link {
+  padding-right: 60px; /* Add padding to make space for the icons */
+  position: relative;
+}
+
+
