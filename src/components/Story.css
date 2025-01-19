@@ -36,6 +36,7 @@
 .layer{
     position: relative;
     height: 1400px;
+    background: #000;
 }
 .stock-ticker2 {
     position :absolute;
