@@ -46,7 +46,9 @@ const FooterWithCourses = () => {
           <div className="ag-courses_item">
             <a href="#" className="ag-courses-item_link">
               <div className="ag-courses-item_bg"></div>
-              <div className="ag-courses-item_title">UX/UI Web-Design + Mobile Design</div>
+              <div className="ag-courses-item_title">
+                UX/UI Web-Design + Mobile Design
+              </div>
               <div className="ag-courses-item_date-box">
                 Start:
                 <span className="ag-courses-item_date">04.11.2022</span>
@@ -152,7 +154,9 @@ const FooterWithCourses = () => {
           <div className="ag-courses_item">
             <a href="#" className="ag-courses-item_link">
               <div className="ag-courses-item_bg"></div>
-              <div className="ag-courses-item_title">Front-end development + jQuery + CMS</div>
+              <div className="ag-courses-item_title">
+                Front-end development + jQuery + CMS
+              </div>
             </a>
             {/* Social Icons */}
             <div className="social-icons">
@@ -173,8 +177,14 @@ const FooterWithCourses = () => {
           {/* Course Item 7 */}
           <div className="ag-courses_item">
             <a href="#" className="ag-courses-item_link">
+              <div className="ag-courses-item_title">Developer</div>
+              {/* Add the image */}
+              <img
+                src="./img/ankit3.jpeg" // Replace with your actual image path or URL
+                alt="Digital Marketing"
+                className="course-image"
+              />
               <div className="ag-courses-item_bg"></div>
-              <div className="ag-courses-item_title">Digital Marketing</div>
             </a>
             {/* Social Icons */}
             <div className="social-icons">
@@ -222,7 +232,9 @@ const FooterWithCourses = () => {
           <div className="ag-courses_item">
             <a href="#" className="ag-courses-item_link">
               <div className="ag-courses-item_bg"></div>
-              <div className="ag-courses-item_title">Advanced Graphic Design</div>
+              <div className="ag-courses-item_title">
+                Advanced Graphic Design
+              </div>
               <div className="ag-courses-item_date-box">
                 Start:
                 <span className="ag-courses-item_date">15.12.2022</span>
@@ -264,7 +276,10 @@ const FooterWithCourses = () => {
             ))}
           </div>
 
-          <a href="#privacy-policy" className="text-sm font-light hover:underline">
+          <a
+            href="#privacy-policy"
+            className="text-sm font-light hover:underline"
+          >
             Privacy Policy
           </a>
         </div>
