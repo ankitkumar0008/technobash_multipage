@@ -16,16 +16,20 @@ const FooterWithCourses = () => {
         <div className="ag-courses_box flex flex-wrap gap-6">
           {/* Course Item 1 */}
           <div className="ag-courses_item">
-            <a href="#" className="ag-courses-item_link">
+            <div className="ag-courses-item_link">
               <div className="ag-courses-item_bg"></div>
               <div className="ag-courses-item_title">
                 UI/Web & Graph design for teenagers 11-17 years old
               </div>
-              <div className="ag-courses-item_date-box">
-                Start:
-                <span className="ag-courses-item_date">04.11.2022</span>
+              <img
+                src="./img/ankit.png" // Replace with your actual image path or URL
+                alt="Digital Marketing"
+                className="course-image"
+              />
+              <div className="email_div">
+                <a href="mailto:ankitkumar867903@gmail.com" className="email_div_text">Ankit Kumar</a>
               </div>
-            </a>
+            </div>
             {/* Social Icons */}
             <div className="social-icons">
               {socialLinks.map((link, index) => (
@@ -44,16 +48,20 @@ const FooterWithCourses = () => {
 
           {/* Course Item 2 */}
           <div className="ag-courses_item">
-            <a href="#" className="ag-courses-item_link">
+            <div className="ag-courses-item_link">
               <div className="ag-courses-item_bg"></div>
               <div className="ag-courses-item_title">
                 UX/UI Web-Design + Mobile Design
               </div>
-              <div className="ag-courses-item_date-box">
-                Start:
-                <span className="ag-courses-item_date">04.11.2022</span>
+              <img
+                src="./img/ankit.png" // Replace with your actual image path or URL
+                alt="Digital Marketing"
+                className="course-image"
+              />
+              <div className="email_div">
+                <a href="mailto:ankitkumar867903@gmail.com" className="email_div_text">Ankit Kumar</a>
               </div>
-            </a>
+            </div>
             {/* Social Icons */}
             <div className="social-icons">
               {socialLinks.map((link, index) => (
@@ -72,16 +80,20 @@ const FooterWithCourses = () => {
 
           {/* Course Item 3 */}
           <div className="ag-courses_item">
-            <a href="#" className="ag-courses-item_link">
+            <div className="ag-courses-item_link">
               <div className="ag-courses-item_bg"></div>
               <div className="ag-courses-item_title">
                 Annual package "Product+UX/UI+Graph designer 2022"
               </div>
-              <div className="ag-courses-item_date-box">
-                Start:
-                <span className="ag-courses-item_date">04.11.2022</span>
+              <img
+                src="./img/ankit.png" // Replace with your actual image path or URL
+                alt="Digital Marketing"
+                className="course-image"
+              />
+              <div className="email_div">
+                <a href="mailto:ankitkumar867903@gmail.com" className="email_div_text">Ankit Kumar</a>
               </div>
-            </a>
+            </div>
             {/* Social Icons */}
             <div className="social-icons">
               {socialLinks.map((link, index) => (
@@ -100,14 +112,18 @@ const FooterWithCourses = () => {
 
           {/* Course Item 4 */}
           <div className="ag-courses_item">
-            <a href="#" className="ag-courses-item_link">
+            <div className="ag-courses-item_link">
               <div className="ag-courses-item_bg"></div>
               <div className="ag-courses-item_title">Graphic Design</div>
-              <div className="ag-courses-item_date-box">
-                Start:
-                <span className="ag-courses-item_date">04.11.2022</span>
+              <img
+                src="./img/ankit.png" // Replace with your actual image path or URL
+                alt="Digital Marketing"
+                className="course-image"
+              />
+              <div className="email_div">
+                <a href="mailto:ankitkumar867903@gmail.com" className="email_div_text">Ankit Kumar</a>
               </div>
-            </a>
+            </div>
             {/* Social Icons */}
             <div className="social-icons">
               {socialLinks.map((link, index) => (
@@ -126,14 +142,18 @@ const FooterWithCourses = () => {
 
           {/* Course Item 5 */}
           <div className="ag-courses_item">
-            <a href="#" className="ag-courses-item_link">
+            <div className="ag-courses-item_link">
               <div className="ag-courses-item_bg"></div>
               <div className="ag-courses-item_title">Motion Design</div>
-              <div className="ag-courses-item_date-box">
-                Start:
-                <span className="ag-courses-item_date">30.11.2022</span>
+              <img
+                src="./img/ankit.png" // Replace with your actual image path or URL
+                alt="Digital Marketing"
+                className="course-image"
+              />
+              <div className="email_div">
+                <a href="mailto:ankitkumar867903@gmail.com" className="email_div_text">Ankit Kumar</a>
               </div>
-            </a>
+            </div>
             {/* Social Icons */}
             <div className="social-icons">
               {socialLinks.map((link, index) => (
@@ -152,12 +172,20 @@ const FooterWithCourses = () => {
 
           {/* Course Item 6 */}
           <div className="ag-courses_item">
-            <a href="#" className="ag-courses-item_link">
+            <div className="ag-courses-item_link">
               <div className="ag-courses-item_bg"></div>
               <div className="ag-courses-item_title">
                 Front-end development + jQuery + CMS
               </div>
-            </a>
+              <img
+                src="./img/ankit.png" // Replace with your actual image path or URL
+                alt="Digital Marketing"
+                className="course-image"
+              />
+              <div className="email_div">
+                <a href="mailto:ankitkumar867903@gmail.com" className="email_div_text">Ankit Kumar</a>
+              </div>
+            </div>
             {/* Social Icons */}
             <div className="social-icons">
               {socialLinks.map((link, index) => (
@@ -176,16 +204,19 @@ const FooterWithCourses = () => {
 
           {/* Course Item 7 */}
           <div className="ag-courses_item">
-            <a href="#" className="ag-courses-item_link">
+            <div className="ag-courses-item_link">
               <div className="ag-courses-item_title">Developer</div>
               {/* Add the image */}
               <img
-                src="./img/ankit3.jpeg" // Replace with your actual image path or URL
+                src="./img/ankit.png" // Replace with your actual image path or URL
                 alt="Digital Marketing"
                 className="course-image"
               />
+              <div className="email_div">
+                <a href="mailto:ankitkumar867903@gmail.com" className="email_div_text">Ankit Kumar</a>
+              </div>
               <div className="ag-courses-item_bg"></div>
-            </a>
+            </div>
             {/* Social Icons */}
             <div className="social-icons">
               {socialLinks.map((link, index) => (
@@ -204,14 +235,18 @@ const FooterWithCourses = () => {
 
           {/* Course Item 8 */}
           <div className="ag-courses_item">
-            <a href="#" className="ag-courses-item_link">
+            <div className="ag-courses-item_link">
               <div className="ag-courses-item_bg"></div>
               <div className="ag-courses-item_title">Interior Design</div>
-              <div className="ag-courses-item_date-box">
-                Start:
-                <span className="ag-courses-item_date">31.10.2022</span>
+              <img
+                src="./img/ankit.png" // Replace with your actual image path or URL
+                alt="Digital Marketing"
+                className="course-image"
+              />
+              <div className="email_div">
+                <a href="mailto:ankitkumar867903@gmail.com" className="email_div_text">Ankit Kumar</a>
               </div>
-            </a>
+            </div>
             {/* Social Icons */}
             <div className="social-icons">
               {socialLinks.map((link, index) => (
@@ -230,16 +265,20 @@ const FooterWithCourses = () => {
 
           {/* Course Item 9 */}
           <div className="ag-courses_item">
-            <a href="#" className="ag-courses-item_link">
+            <div className="ag-courses-item_link">
               <div className="ag-courses-item_bg"></div>
               <div className="ag-courses-item_title">
                 Advanced Graphic Design
               </div>
-              <div className="ag-courses-item_date-box">
-                Start:
-                <span className="ag-courses-item_date">15.12.2022</span>
+              <img
+                src="./img/ankit.png" // Replace with your actual image path or URL
+                alt="Digital Marketing"
+                className="course-image"
+              />
+              <div className="email_div">
+                <a href="mailto:ankitkumar867903@gmail.com" className="email_div_text">Ankit Kumar</a>
               </div>
-            </a>
+            </div>
             {/* Social Icons */}
             <div className="social-icons">
               {socialLinks.map((link, index) => (

@@ -39,6 +39,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 .ag-courses-item_link:hover .ag-courses-item_bg {
@@ -53,6 +54,7 @@
   margin-bottom: 15px; /* Space between the title and the image */
   margin-top: -20px;
   color: white; /* Matches the card's text color */
+  z-index: 2;
 }
 
 
@@ -182,12 +184,26 @@
 .ag-courses_item .ag-courses-item_link {
   padding-right: 60px; /* Add padding to make space for the icons */
   position: relative;
+  padding-bottom: 0px;
 }
 .course-image {
   width: 100%;
-  height: 250px; /* Adjust as needed */
+  height: 100%; /* Adjust as needed */
   border-radius: 12px; /* Matches card's border radius */
   object-fit: cover;
   margin-bottom: 15px;
+  z-index: 2;
+  display: block;
 }
 
+.email_div{
+  transition: color 0.3s ease-in-out;
+}
+
+.email_div:hover .email_div_text{
+  color: #f9b234;
+}
+
+.email_div_text{
+  font-size: 30px;
+}
