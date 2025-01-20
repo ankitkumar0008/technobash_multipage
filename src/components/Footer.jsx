@@ -20,7 +20,7 @@ const courseDetails = [
   {
     //2
     title: "Website Team Head",
-    imgSrc: "./img/ankit.png", // Replace with your actual image path or URL
+    imgSrc: "./img/Aditya.png", // Replace with your actual image path or URL
     linkText: "Aditya Chaudhari", // Custom text
     contactLink: "mailto:adityakchaudhari@gmail.com", // Link to redirect
     socialLinks: [
@@ -32,7 +32,7 @@ const courseDetails = [
   {
     //3
     title: "Graphic Designer",
-    imgSrc: "./img/ankit.png", // Replace with your actual image path or URL
+    imgSrc: "./img/Manas.png", // Replace with your actual image path or URL
     linkText: "Manas Suryawanshi", // Custom text
     contactLink: "mailto:Manassuryawanshi29@gmail.com", // Link to redirect
     socialLinks: [
@@ -44,7 +44,7 @@ const courseDetails = [
   {
     //4
     title: "Website Developer",
-    imgSrc: "./img/ankit.png", // Replace with your actual image path or URL
+    imgSrc: "./img/Hrishikesh.png", // Replace with your actual image path or URL
     linkText: "Hrishikesh Alabnur", // Custom text
     contactLink: "mailto:hrishikesh3248@gmail.com", // Link to redirect
     socialLinks: [
@@ -56,7 +56,7 @@ const courseDetails = [
   {
     //5
     title: "Website Team head",
-    imgSrc: "./img/ankit.png", // Replace with your actual image path or URL
+    imgSrc: "./img/Siddhantt.png", // Replace with your actual image path or URL
     linkText: "Siddhant Herale", // Custom text
     contactLink: "mailto:heralesiddhant@gmail.com", // Link to redirect
     socialLinks: [
@@ -68,7 +68,7 @@ const courseDetails = [
   {
     //6
     title: "Content Writer",
-    imgSrc: "./img/ankit.png", // Replace with your actual image path or URL
+    imgSrc: "./img/Shantanu.png", // Replace with your actual image path or URL
     linkText: "Shantanu Bhandakkar", // Custom text
     contactLink: "mailto:shantanubhandakkar2@gmail.com", // Link to redirect
     socialLinks: [
@@ -80,7 +80,7 @@ const courseDetails = [
   {
     //7
     title: "Research Team",
-    imgSrc: "./img/ankit.png", // Replace with your actual image path or URL
+    imgSrc: "./img/Vaishnavi.png", // Replace with your actual image path or URL
     linkText: "Vaishnavi Kamble", // Custom text
     contactLink: "mailto:vaishnavikamble57248@gmail.com", // Link to redirect
     socialLinks: [
@@ -92,7 +92,7 @@ const courseDetails = [
   {
     //8
     title: "Research Team",
-    imgSrc: "./img/ankit.png", // Replace with your actual image path or URL
+    imgSrc: "./img/Kalpesh.png", // Replace with your actual image path or URL
     linkText: "Kalpesh Sonawane", // Custom text
     contactLink: "mailto:sonawanekalpesh68@gmail.com", // Link to redirect
     socialLinks: [
@@ -104,7 +104,7 @@ const courseDetails = [
   {
     //9
     title: "Research Team",
-    imgSrc: "./img/ankit.png", // Replace with your actual image path or URL
+    imgSrc: "./img/Hetavi.png", // Replace with your actual image path or URL
     linkText: "Hetavi Manani", // Custom text
     contactLink: "mailto:mananihetvi@gmail.com", // Link to redirect
     socialLinks: [
@@ -169,20 +169,18 @@ const FooterWithCourses = () => {
         <div className="footer-content flex justify-between items-center">
           <p className="text-sm font-light">©Nova 2024. All rights reserved</p>
 
-          <div className="flex gap-6 text-lg">
-            {/* Footer Social Links (From the first card) */}
-            {courseDetails[0].socialLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-black transition-colors duration-500 ease-in-out hover:text-white"
-              >
-                {link.icon}
-              </a>
-            ))}
+          {/* Single Instagram Link */}
+          <div className="text-lg">
+            <a
+              href="https://www.instagram.com/technobash_2k25?igsh=ODVkYTJpeHNnZjg="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black transition-colors duration-500 ease-in-out hover:text-white"
+            >
+              <FaInstagram />
+            </a>
           </div>
+
 
           <a
             href="#privacy-policy"
