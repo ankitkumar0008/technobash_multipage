@@ -45,6 +45,7 @@ export const BentoCard = ({
   description,
   isComingSoon,
   content,
+  registerLink,
 }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoverOpacity, setHoverOpacity] = useState(0);
@@ -64,11 +65,11 @@ export const BentoCard = ({
   const handleMouseLeave = () => setHoverOpacity(0);
 
   return (
-    <div class="card">
+    <div className="card">
       <div className="relative size-full card_whole_body">
         <div className="cardBody">
-          <div class="card__side card__side--front">
-            <div class="card__theme">
+          <div className="card__side card__side--front">
+            <div className="card__theme">
               <video
                 src={src}
                 loop
@@ -86,67 +87,46 @@ export const BentoCard = ({
                     </p>
                   )}
                 </div>
-
-                {/* <div class="card__side card__side--front">
-            <div class="card__theme">
-              <div class="card__theme-box">
-                <p class="card__subject">Web Developer</p>
-                <p class="card__title">Hello World!</p>
-              </div>
-             */}
               </div>
             </div>
           </div>
 
-          <div class="card__side card__side--back">
-            {/* <div class="card__cover">
-            </div> */}
-            <div class="card__details">{content}</div>
+          <div className="card__side card__side--back">
+            <div className="card__details">{content}</div>
           </div>
         </div>
-        {isComingSoon && (
-          <div className="Buttons_cards">
-            <div
-              ref={hoverButtonRef}
-              onMouseMove={handleMouseMove}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
-            >
-              <div
-                className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
-                style={{
-                  opacity: hoverOpacity,
-                  background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
-                }}
-              />
-              <TiLocationArrow className="relative z-20" />
-              <p className="relative z-20 text-white">Registration</p>
-            </div>
 
+        <div className="Buttons_cards">
+          <a
+            href={registerLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
+          >
             <div
               ref={hoverButtonRef}
               onMouseMove={handleMouseMove}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
-            >
-              <div
-                className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
-                style={{
-                  opacity: hoverOpacity,
-                  background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
-                }}
-              />
-              <TiLocationArrow className="relative z-20" />
-              <p className="relative z-20 text-white	">More ...</p>
-            </div>
-          </div>
-        )}
+              className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
+              style={{
+                opacity: hoverOpacity,
+                background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
+              }}
+            />
+            <TiLocationArrow className="relative z-20" />
+            <p className="relative z-20 text-white">Registration</p>
+          </a>
+
+          <button className="more-button">
+            More
+          </button>
+        </div>
       </div>
     </div>
   );
 };
+
 
 const Features = () => (
   <section className="bg-black pb-52">
@@ -178,6 +158,7 @@ const Features = () => (
           ParadoxCodeFlux"
           description="PREP-A-THON is a hackathon that focuses on basic interview aspects for the company to hire. This event will contain all the topics needed for preparation of a company. The questions will be set by the sponsor company."
           isComingSoon
+          registerLink='https://docs.google.com/forms/d/e/1FAIpQLSdwuA5TUWwnUkw2Q0ELgXnA4htv5xrpCYDRNbd2oAA4qKxEMg/viewform?usp=dialog'
         />
       </BentoTilt>
 
