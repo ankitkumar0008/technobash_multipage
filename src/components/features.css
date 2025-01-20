@@ -1,3 +1,6 @@
+.prepathon{
+  height: 500px;
+}
 .ag-courses-item_bg {
     background-size: cover;
     background-position: center;
@@ -83,14 +86,12 @@
     }
   }
   
-
-
-
   .Buttons_cards{
     display:flex;
     gap: 10px;
     position: absolute;
-    bottom: 7%;
+    bottom: 20px;
+    left: 20px;
   }
 
   .bento-title{

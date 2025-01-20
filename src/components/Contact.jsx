@@ -1,14 +1,7 @@
 import AnimatedTitle from "./AnimatedTitle";
 
 const Contact = () => {
-  const gridImages = [
-    "/img/grid1.webp",
-    "/img/grid2.webp",
-    "/img/grid3.webp",
-    "/img/grid4.webp",
-    "/img/grid5.webp",
-    "/img/grid6.webp",
-  ];
+  const gridImages = ["/img/Sponsor_shanacoder.jpeg"];
 
   return (
     <div id="contact" className="my-20 min-h-96 w-screen px-10">
@@ -17,18 +10,18 @@ const Contact = () => {
         <div className="flex flex-col items-center text-center relative z-10 -translate-y-56">
           <p className="mb-5 font-general text-[10px] uppercase">Technobash</p>
 
-          <AnimatedTitle
+         <AnimatedTitle 
             title="sponsors contact me hai"
             className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
           />
         </div>
 
-        {/* Grid Section */}
-        <div className="mt-20 grid grid-cols-1 gap-4 px-10 sm:grid-cols-2 lg:grid-cols-3 relative z-10">
+        {/* Centered Image Section */}
+        <div className="flex justify-center items-center mt-20 relative z-10">
           {gridImages.map((image, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-lg border border-gray-700 shadow-lg"
+              className="overflow-hidden rounded-lg border border-gray-700 shadow-lg max-w-xs"
             >
               <img
                 src={image}
