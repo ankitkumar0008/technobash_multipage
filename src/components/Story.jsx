@@ -122,6 +122,7 @@ const FloatingImage = () => {
       </div>
       {/* Dynamically Rendered Images */}
       {/* <div className="mt-10 w-full flex flex-wrap justify-center gap-4"> */}
+      <div className="firstheading"> Department Heads</div>
       <div class="stock-ticker">
         <ul>
           {images.map((image, index) => (
@@ -151,7 +152,7 @@ const FloatingImage = () => {
           ))}
         </ul>
       </div>
-
+      <div className="firstheading2"> Second heading</div>
       <div class="stock-ticker2">
         <ul>
           {images.map((image, index) => (
@@ -181,7 +182,7 @@ const FloatingImage = () => {
           ))}
         </ul>
       </div>
-
+      <div className="firstheading3"> Third heading</div>
       <div class="stock-ticker3">
         <ul>
           {images.map((image, index) => (
