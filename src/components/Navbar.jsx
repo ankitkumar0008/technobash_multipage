@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
+import "./Navbar.css";
 
 import Button from "./Button";
 
@@ -70,7 +71,7 @@ const NavBar = () => {
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
           {/* Logo and Product button */}
-          <div className="flex items-center gap-7">
+          <div className="flex items-center gap-7 nav_logo">
             <img src="/img/logo.png" alt="logo" className="w-20" />
           </div>
 
@@ -81,7 +82,7 @@ const NavBar = () => {
                 <a
                   key={index}
                   href={`#${item.toLowerCase()}`}
-                  className="nav-hover-btn"
+                  className="nav-hover-btn nav_click"
                 >
                   {item}
                 </a>
@@ -90,7 +91,7 @@ const NavBar = () => {
 
             <button
               onClick={toggleAudioIndicator}
-              className="ml-10 flex items-center space-x-0.5"
+              className="ml-10 flex items-center space-x-0.5 music_nav"
             >
               <audio
                 ref={audioElementRef}
@@ -98,7 +99,7 @@ const NavBar = () => {
                 src="/audio/loop.mp3"
                 loop
               />
-              {[1, 2, 3, 4].map((bar) => (
+              {[1, 2, 3, 4,5,6,7].map((bar) => (
                 <div
                   key={bar}
                   className={clsx("indicator-line", {
