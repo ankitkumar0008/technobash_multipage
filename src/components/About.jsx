@@ -3,6 +3,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 
 import AnimatedTitle from "./AnimatedTitle";
+import "./About.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,7 +29,7 @@ const About = () => {
 
   return (
     <div id="about" className="min-h-screen w-screen">
-      <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
+      <div className="relative mb-8 mt-36 flex flex-col items-center gap-5 ">
         <p className="font-general text-sm uppercase md:text-[10px]">
           Welcome to the tech fest of gsm coe
         </p>
@@ -49,7 +50,7 @@ const About = () => {
       </div>
 
       <div className="h-dvh w-screen" id="clip">
-        <div className="mask-clip-path about-image">
+        <div className="mask-clip-path about-image tech_ani_img">
           <img
             src="img/about.webp"
             alt="Background"

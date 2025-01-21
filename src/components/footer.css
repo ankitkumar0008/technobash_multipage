@@ -25,6 +25,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
+  border:1px solid black;
 }
 
 .ag-courses-item_link {
@@ -84,7 +85,7 @@
 
 /* Color variations for different courses */
 .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-  background-color: #3ecd5e;
+  background-color: #fbfbfb;
 }
 
 .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
@@ -206,4 +207,50 @@
 
 .email_div_text{
   font-size: 30px;
+}
+
+@media screen and (max-width:1200px) {
+  .ag-courses-item_title{
+    font-size: 25px;
+  }
+  .email_div a{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .ag-courses-item_title{
+    font-size: 25px;
+  }
+  .email_div a{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .ag-courses-item_title{
+    font-size: 25px;
+  }
+  .email_div a{
+    font-size: 20px;
+  }
+
+  .tyre{
+    font-size: 10px;
+  }
+  .izaat{
+    width: 20px;
+    height: 20px;
+  }
+
+  .utar{
+    height: 100%;
+    display: block;
+    width: 100%;
+  }
+
+  .utar svg{
+    height: 100%;
+    width: 100%;
+  }
 }

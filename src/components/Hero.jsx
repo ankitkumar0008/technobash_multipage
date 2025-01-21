@@ -3,6 +3,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import { TiLocationArrow } from "react-icons/ti";
 import { useEffect, useRef, useState } from "react";
+import "./Hero.css";
 
 import Button from "./Button";
 import VideoPreview from "./VideoPreview";
@@ -135,7 +136,7 @@ const Hero = () => {
             autoPlay
             loop
             muted
-            className="absolute left-0 top-0 size-full object-cover object-center"
+            className="absolute left-0 top-0 size-full object-cover object-center technobash_video"
             onLoadedData={handleVideoLoad}
           />
         </div>

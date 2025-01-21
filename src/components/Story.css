@@ -172,3 +172,13 @@
       transform: translateX(0);
   }
 }  
+
+
+@media screen and (max-width:600px) {
+  .story-img-container{
+    display: none;
+  }
+  .layer{
+    height: 900px;
+  }
+}

@@ -167,15 +167,15 @@ const FooterWithCourses = () => {
 
         {/* Footer Content Section */}
         <div className="footer-content flex justify-between items-center">
-          <p className="text-sm font-light">©Nova 2024. All rights reserved</p>
+          <p className="text-sm font-light tyre">©Nova 2024. All rights reserved</p>
 
           {/* Single Instagram Link */}
-          <div className="text-lg">
+          <div className="text-lg izaat">
             <a
               href="https://www.instagram.com/technobash_2k25?igsh=ODVkYTJpeHNnZjg="
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black transition-colors duration-500 ease-in-out hover:text-white"
+              className="text-black transition-colors duration-500 ease-in-out hover:text-white utar"
             >
               <FaInstagram />
             </a>
@@ -184,7 +184,7 @@ const FooterWithCourses = () => {
 
           <a
             href="#privacy-policy"
-            className="text-sm font-light hover:underline"
+            className="text-sm font-light hover:underline tyre"
           >
             Privacy Policy
           </a>

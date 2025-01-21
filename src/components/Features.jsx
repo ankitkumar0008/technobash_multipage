@@ -115,7 +115,7 @@ export const BentoCard = ({
                 background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
               }}
             />
-            <TiLocationArrow className="relative z-20" />
+            {/* <TiLocationArrow className="relative z-20" /> */}
             <p className="relative z-20 text-white">Registration</p>
           </a>
 
@@ -136,7 +136,7 @@ export const BentoCard = ({
                 background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
               }}
             />
-            <TiLocationArrow className="relative z-20" />
+            {/* <TiLocationArrow className="relative z-20" /> */}
             <p className="relative z-20 text-white">More ...</p>
           </a>
         </div>
@@ -181,7 +181,7 @@ const Features = () => (
       </BentoTilt>
 
       <div className="grid  w-full grid-cols-2 grid-rows-5 gap-7 main_card_body">
-        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
+        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2 cardL">
           <BentoCard
             src="videos/callofduty.mp4"
             title={
@@ -202,7 +202,7 @@ Two ultimate champions will rise victorious"
           ></BentoCard>
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0 cardR">
           <BentoCard
             src="./videos/BGMI.mp4"
             title={
@@ -221,7 +221,7 @@ Let the battlegrounds decide who truly reigns supreme!"
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0 cardL">
           <BentoCard
             src="videos/feature-4.mp4"
             title={
@@ -237,7 +237,7 @@ Let the battlegrounds decide who truly reigns supreme!"
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 ms-32 md:col-span-1 md:ms-0">
+        <BentoTilt className="bento-tilt_1 ms-32 md:col-span-1 md:ms-0 cardR">
           <BentoCard
             src="videos/Digitalposter.mp4"
             title={<>Digital Poster Competition on Innovative Business Ideas</>}
@@ -249,7 +249,7 @@ Let the battlegrounds decide who truly reigns supreme!"
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1  md:col-span-1  row-span-1 md:row-span-2">
+        <BentoTilt className="bento-tilt_1  md:col-span-1  row-span-1 md:row-span-2 cardL">
           <BentoCard
             src="videos/ENTC1.mp4"
             title={
@@ -277,7 +277,7 @@ Details of these rounds will be revealed on the day."
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0 cardR">
           <BentoCard
             src="./videos/tagitright.mp4"
             title={<>TAG IT RIGHT : HTML Challenges!</>}
@@ -290,7 +290,7 @@ Details of these rounds will be revealed on the day."
             More_Link="https://google.com"
           />
         </BentoTilt>
-        <BentoTilt className="bento-tilt_1 parallelchild row-span-1 md:col-span-1 md:row-span-2">
+        <BentoTilt className="bento-tilt_1 parallelchild row-span-1 md:col-span-1 md:row-span-2 cardL">
           <BentoCard
             src="videos/Civilcatwars.mp4"
             title={<>Cat-War</>}
@@ -302,7 +302,7 @@ Details of these rounds will be revealed on the day."
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 parallelchild row-span-1 ms-32 md:col-span-1 md:ms-0">
+        <BentoTilt className="bento-tilt_1 parallelchild row-span-1 ms-32 md:col-span-1 md:ms-0 cardR">
           <BentoCard
             src="videos/feature-3.mp4"
             title={<>Ecovision 2k25</>}

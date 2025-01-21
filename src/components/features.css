@@ -92,6 +92,14 @@
     position: absolute;
     bottom: 20px;
     left: 20px;
+    width: 80%;
+  }
+
+  .Buttons_cards a{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    border-color: #ffffff96
   }
 
   .bento-title{
@@ -292,7 +300,7 @@
   .card__details li:not(:last-child) {
     border-bottom: 1px solid var(--color-gray-light);
   }
-  
+/*   
   @media (max-width: 37.5em) {
     .card {
       height: auto;
@@ -337,5 +345,53 @@
     .card__title {
       font-size: 4rem;
     }
+  } */
+  @media screen and (max-width:767px) {
+    .main_card_body{
+      height: 3000px;
+    }
+
+    .cardL{
+      width:90vw;
+      margin-right: auto;
+      margin-left: 0px;
+      height: 50vw;
+
+    }
+
+    .cardR{
+      width: 90vw;
+      margin-left: auto;
+      margin-right: 0px;
+      height: 50vw;
+    }
   }
-  
+
+  @media screen and (max-width:600px) {
+    #events{
+      height: 100%;
+    }
+
+    .prepathon{
+      height: 400px;
+    }
+
+    .main_card_body{
+      height: 790vw;
+    }
+
+    .cardL{
+      width:90vw;
+      margin-right: auto;
+      margin-left: 0px;
+      height: 90vw;
+
+    }
+
+    .cardR{
+      width: 90vw;
+      margin-left: auto;
+      margin-right: 0px;
+      height: 90vw;
+    }
+  }
