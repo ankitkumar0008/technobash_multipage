@@ -37,7 +37,7 @@ const courseDetails = [
     contactLink: "mailto:Manassuryawanshi29@gmail.com", // Link to redirect
     socialLinks: [
       { href: "https://linkedin.com/in/ankit3", icon: <FaLinkedin /> },
-      { href: "https://github.com/ankit3", icon: <FaGithub /> },
+      { href: "https://github.com/manassuryawanshi", icon: <FaGithub /> },
       { href: "https://www.instagram.com/manassuryawanshi_?igsh=aWd2OWM1YnV0M3Ey", icon: <FaInstagram /> },
     ],
   },
@@ -67,7 +67,7 @@ const courseDetails = [
   },
   {
     //6
-    title: "Content Writer",
+    title: "Designer",
     imgSrc: "./img/Shantanu.png", // Replace with your actual image path or URL
     linkText: "Shantanu Bhandakkar", // Custom text
     contactLink: "mailto:shantanubhandakkar2@gmail.com", // Link to redirect

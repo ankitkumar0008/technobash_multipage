@@ -6,9 +6,18 @@ import "./Story.css";
 
 const FloatingImage = () => {
   const frameRef = useRef(null);
-  const [images, setImages] = useState(
+  const [departmentheadimages, departmentheadsetImages] = useState(
+    Array.from({ length: 2 }, (_, i) => `./img/departmenthead-${i + 1}.jpeg`)
+  );
+
+  const [Eventcoordinatorsimages, EventcoordinatorssetImages] = useState(
     Array.from({ length: 10 }, (_, i) => `/img/gallery-${i + 1}.webp`)
   );
+
+  const [EventTeamsimages, EventTeamssetImages] = useState(
+    Array.from({ length: 10 }, (_, i) => `/img/gallery-${i + 1}.webp`)
+  );
+
   const [isLoading, setIsLoading] = useState(false);
 
   // Handle mouse move for 3D effect
@@ -87,7 +96,7 @@ const FloatingImage = () => {
 
   return (
     <div className="layer">
-      <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
+      <div id="contact" className="min-h-dvh w-screen bg-black text-blue-50">
         <div className="flex size-full flex-col items-center py-10 pb-24">
           <p className="font-general text-sm uppercase md:text-[10px]">
             the multiversal ip world
@@ -130,13 +139,13 @@ const FloatingImage = () => {
       </div>
       <div class="stock-ticker">
         <ul>
-          {images.map((image, index) => (
+          {departmentheadimages.map((departmentheadimage, index) => (
             <li>
               <img
                 // class=""
                 key={index}
-                src={image}
-                alt={`gallery-${index + 1}.webp`}
+                src={`./img/departmenthead-${index + 1}.jpeg`}
+                //alt={`departmenthead-${index + 1}.jpeg`}
                 className="w-60 h-60 object-cover rounded-lg shadow-lg Rishi_img"
               />
             </li>
@@ -144,13 +153,13 @@ const FloatingImage = () => {
         </ul>
 
         <ul>
-          {images.map((image, index) => (
+          {departmentheadimages.map((departmentheadimage, index) => (
             <li>
               <img
                 // class=""
                 key={index}
-                src={image}
-                alt={`gallery-${index + 1}.webp`}
+                src={departmentheadimage}
+                alt={`departmenthead-${index + 1}.jpeg`}
                 className="w-60 h-60 object-cover rounded-lg shadow-lg Rishi_img"
               />
             </li>

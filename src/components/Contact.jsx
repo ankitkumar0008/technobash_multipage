@@ -1,7 +1,7 @@
 import AnimatedTitle from "./AnimatedTitle";
 
 const Contact = () => {
-  const gridImages = ["/img/Sponsor_shanacoder.jpeg"];
+  const gridImages = ["/img/shanacoder.png"];
 
   return (
     <div id="contact" className="my-20 min-h-96 w-screen px-10">
@@ -11,7 +11,7 @@ const Contact = () => {
           <p className="mb-5 font-general text-[10px] uppercase">Technobash</p>
 
          <AnimatedTitle 
-            title="sponsors contact me hai"
+            title="our sponsors"
             className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
           />
         </div>
