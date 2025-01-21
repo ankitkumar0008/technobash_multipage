@@ -1,64 +1,6 @@
-  .stock-ticker {
-      position :absolute;
-      bottom: 65%;
-      font-size: 15px;
-      padding-block: 8px;
-
-      overflow: hidden;
-      user-select: none;
-
-      --gap: 20px;
-      display: flex;
-      gap: var(--gap);
-  }
-  .firstheading{
+.stock-ticker {
     position :absolute;
-    bottom: 80%;
-    color: #fff;
-    font-size: 20px;
-  }
-
-  .stock-ticker ul {
-      list-style: none;
-      flex-shrink: 0;
-      min-width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: var(--gap);
-
-      animation: scroll 20s linear infinite;
-  }
-
-  .stock-ticker:hover ul {
-      animation-play-state: paused;
-  }
-
-  @keyframes scroll {
-      to {
-          transform: translateX(calc(-100% - var(--gap)));
-      }
-  }
-.layer{
-    position: relative;
-    height: 1400px;
-    background: #000;
-}
-.firstheading2 {
-    position: absolute;
-    bottom: 60%;
-    right: 0; /* Aligns the text container to the right */
-    color: #fff;
-    font-size: 30px;
-    text-align: right;
-    width: auto; /* Ensures the container width adjusts to its content */
-    max-width: 100%; /* Prevents overflow if the content is too wide */
-  }
-  
-  
-.stock-ticker2 {
-    position :absolute;
-    bottom: 45%;
+    bottom: 65%;
     font-size: 15px;
     padding-block: 8px;
 
@@ -69,59 +11,13 @@
     display: flex;
     gap: var(--gap);
 }
-.stock-ticker2 ul {
-    list-style: none;
-    flex-shrink: 0;
-    min-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--gap);
-
-    animation: scroll 20s linear infinite;
+.firstheading{
+  position :absolute;
+  bottom: 80%;
+  color: #fff;
+  font-size: 20px;
 }
 
-.stock-ticker2:hover ul {
-    animation-play-state: paused;
-}
-.firstheading3{
-    position :absolute;
-    bottom: 35%;
-    color: #fff;
-    font-size: 50px;
-  }
-.stock-ticker3 {
-    position :absolute;
-    bottom: 20%;
-    font-size: 15px;
-    padding-block: 8px;
-
-    overflow: hidden;
-    user-select: none;
-
-    --gap: 20px;
-    display: flex;
-    gap: var(--gap);
-}
-.stock-ticker3 ul {
-    list-style: none;
-    flex-shrink: 0;
-    min-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--gap);
-
-    animation: scroll 20s linear infinite;
-}
-
-.stock-ticker3:hover ul {
-    animation-play-state: paused;
-}
-
-
-
-/* First Stock Ticker: Right to Left (No changes) */
 .stock-ticker ul {
     list-style: none;
     flex-shrink: 0;
@@ -130,45 +26,149 @@
     justify-content: space-between;
     align-items: center;
     gap: var(--gap);
-    animation: scroll 20s linear infinite; /* Right to Left */
+
+    animation: scroll 20s linear infinite;
 }
 
-/* Second Stock Ticker: Left to Right */
-.stock-ticker2 ul {
-    list-style: none;
-    flex-shrink: 0;
-    min-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--gap);
-    animation: scroll-reverse 20s linear infinite; /* Left to Right */
+.stock-ticker:hover ul {
+    animation-play-state: paused;
 }
 
-/* Third Stock Ticker: Right to Left (No changes) */
-.stock-ticker3 ul {
-    list-style: none;
-    flex-shrink: 0;
-    min-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--gap);
-    animation: scroll 20s linear infinite; /* Right to Left */
-}
-
-/* Keyframes */
 @keyframes scroll {
     to {
         transform: translateX(calc(-100% - var(--gap)));
     }
 }
+.layer{
+  position: relative;
+  height: 1400px;
+  background: #000;
+}
+.firstheading2 {
+  position: absolute;
+  bottom: 60%;
+  right: 0; /* Aligns the text container to the right */
+  color: #fff;
+  font-size: 30px;
+  text-align: right;
+  width: auto; /* Ensures the container width adjusts to its content */
+  max-width: 100%; /* Prevents overflow if the content is too wide */
+}
+
+
+.stock-ticker2 {
+  position :absolute;
+  bottom: 45%;
+  font-size: 15px;
+  padding-block: 8px;
+
+  overflow: hidden;
+  user-select: none;
+
+  --gap: 20px;
+  display: flex;
+  gap: var(--gap);
+}
+.stock-ticker2 ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+
+  animation: scroll 20s linear infinite;
+}
+
+.stock-ticker2:hover ul {
+  animation-play-state: paused;
+}
+.firstheading3{
+  position :absolute;
+  bottom: 35%;
+  color: #fff;
+  font-size: 50px;
+}
+.stock-ticker3 {
+  position :absolute;
+  bottom: 20%;
+  font-size: 15px;
+  padding-block: 8px;
+
+  overflow: hidden;
+  user-select: none;
+
+  --gap: 20px;
+  display: flex;
+  gap: var(--gap);
+}
+.stock-ticker3 ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+
+  animation: scroll 20s linear infinite;
+}
+
+.stock-ticker3:hover ul {
+  animation-play-state: paused;
+}
+
+
+
+/* First Stock Ticker: Right to Left (No changes) */
+.stock-ticker ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+  animation: scroll 20s linear infinite; /* Right to Left */
+}
+
+/* Second Stock Ticker: Left to Right */
+.stock-ticker2 ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+  animation: scroll-reverse 20s linear infinite; /* Left to Right */
+}
+
+/* Third Stock Ticker: Right to Left (No changes) */
+.stock-ticker3 ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+  animation: scroll 20s linear infinite; /* Right to Left */
+}
+
+/* Keyframes */
+@keyframes scroll {
+  to {
+      transform: translateX(calc(-100% - var(--gap)));
+  }
+}
 
 @keyframes scroll-reverse {
-    from {
-        transform: translateX(calc(-100% - var(--gap)));
-    }
-    to {
-        transform: translateX(0);
-    }
+  from {
+      transform: translateX(calc(-100% - var(--gap)));
+  }
+  to {
+      transform: translateX(0);
+  }
 }  
