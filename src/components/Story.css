@@ -15,7 +15,7 @@
     position :absolute;
     bottom: 80%;
     color: #fff;
-    font-size: 50px;
+    font-size: 20px;
   }
 
   .stock-ticker ul {
@@ -44,14 +44,18 @@
     height: 1400px;
     background: #000;
 }
-.firstheading2{
-    position :absolute;
+.firstheading2 {
+    position: absolute;
     bottom: 60%;
+    right: 0; /* Aligns the text container to the right */
     color: #fff;
-    font-size: 50px;
+    font-size: 30px;
     text-align: right;
-    width: 100%;
+    width: auto; /* Ensures the container width adjusts to its content */
+    max-width: 100%; /* Prevents overflow if the content is too wide */
   }
+  
+  
 .stock-ticker2 {
     position :absolute;
     bottom: 45%;
