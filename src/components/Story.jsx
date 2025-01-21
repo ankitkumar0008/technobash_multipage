@@ -6,18 +6,22 @@ import "./Story.css";
 
 const FloatingImage = () => {
   const frameRef = useRef(null);
-  const [departmentheadimages, departmentheadsetImages] = useState(
-    Array.from({ length: 2 }, (_, i) => `./img/departmenthead-${i + 1}.jpeg`)
+  // const [images, setImages] = useState(
+  //   Array.from({ length: 10 }, (_, i) => `/img/gallery-${i + 1}.webp`)
+  // );
+
+  const [departmenthead, setdepartmenthead] = useState(
+    Array.from({ length: 2 }, (_, i) => `/img/departmenthead-${i + 1}.jpeg`)
   );
 
-  const [Eventcoordinatorsimages, EventcoordinatorssetImages] = useState(
-    Array.from({ length: 10 }, (_, i) => `/img/gallery-${i + 1}.webp`)
+  const [eventCoord, seteventCoord] = useState(
+    Array.from({ length: 2 }, (_, i) => `/img/eventCoord-${i + 1}.jpeg`)
   );
 
-  const [EventTeamsimages, EventTeamssetImages] = useState(
-    Array.from({ length: 10 }, (_, i) => `/img/gallery-${i + 1}.webp`)
-  );
 
+  const [eventTeam, seteventTeam] = useState(
+    Array.from({ length: 2 }, (_, i) => `/img/eventTeam-${i + 1}.jpeg`)
+  );
   const [isLoading, setIsLoading] = useState(false);
 
   // Handle mouse move for 3D effect
@@ -96,7 +100,7 @@ const FloatingImage = () => {
 
   return (
     <div className="layer">
-      <div id="contact" className="min-h-dvh w-screen bg-black text-blue-50">
+      <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
         <div className="flex size-full flex-col items-center py-10 pb-24">
           <p className="font-general text-sm uppercase md:text-[10px]">
             the multiversal ip world
@@ -139,13 +143,13 @@ const FloatingImage = () => {
       </div>
       <div class="stock-ticker">
         <ul>
-          {departmentheadimages.map((departmentheadimage, index) => (
+          {departmenthead.map((image, index) => (
             <li>
               <img
                 // class=""
                 key={index}
-                src={`./img/departmenthead-${index + 1}.jpeg`}
-                //alt={`departmenthead-${index + 1}.jpeg`}
+                src={image}
+                alt={`gallery-${index + 1}.webp`}
                 className="w-60 h-60 object-cover rounded-lg shadow-lg Rishi_img"
               />
             </li>
@@ -153,13 +157,13 @@ const FloatingImage = () => {
         </ul>
 
         <ul>
-          {departmentheadimages.map((departmentheadimage, index) => (
+          {departmenthead.map((image, index) => (
             <li>
               <img
                 // class=""
                 key={index}
-                src={departmentheadimage}
-                alt={`departmenthead-${index + 1}.jpeg`}
+                src={image}
+                alt={`gallery-${index + 1}.webp`}
                 className="w-60 h-60 object-cover rounded-lg shadow-lg Rishi_img"
               />
             </li>
@@ -176,7 +180,7 @@ const FloatingImage = () => {
 
       <div class="stock-ticker2">
         <ul>
-          {images.map((image, index) => (
+          {eventCoord.map((image, index) => (
             <li>
               <img
                 // class=""
@@ -190,7 +194,7 @@ const FloatingImage = () => {
         </ul>
 
         <ul>
-          {images.map((image, index) => (
+          {eventCoord.map((image, index) => (
             <li>
               <img
                 // class=""
@@ -211,7 +215,7 @@ const FloatingImage = () => {
       </div>
       <div class="stock-ticker3">
         <ul>
-          {images.map((image, index) => (
+          {eventTeam.map((image, index) => (
             <li>
               <img
                 // class=""
@@ -225,7 +229,7 @@ const FloatingImage = () => {
         </ul>
 
         <ul>
-          {images.map((image, index) => (
+          {eventTeam.map((image, index) => (
             <li>
               <img
                 // class=""
