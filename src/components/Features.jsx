@@ -45,7 +45,8 @@ export const BentoCard = ({
   description,
   isComingSoon,
   content,
-  registerLink,
+  Register_Link,
+  More_Link
 }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoverOpacity, setHoverOpacity] = useState(0);
@@ -98,7 +99,7 @@ export const BentoCard = ({
 
         <div className="Buttons_cards">
           <a
-            href={registerLink}
+            href={Register_Link}
             target="_blank"
             rel="noopener noreferrer"
             className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
@@ -118,9 +119,26 @@ export const BentoCard = ({
             <p className="relative z-20 text-white">Registration</p>
           </a>
 
-          <button className="more-button">
-            More
-          </button>
+          <a
+            href={More_Link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
+          >
+            <div
+              ref={hoverButtonRef}
+              onMouseMove={handleMouseMove}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="pointer-events-none absolute -inset-px opacity-0 transition duration-300"
+              style={{
+                opacity: hoverOpacity,
+                background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
+              }}
+            />
+            <TiLocationArrow className="relative z-20" />
+            <p className="relative z-20 text-white">More ...</p>
+          </a>
         </div>
       </div>
     </div>
@@ -158,7 +176,8 @@ const Features = () => (
           ParadoxCodeFlux"
           description="PREP-A-THON is a hackathon that focuses on basic interview aspects for the company to hire. This event will contain all the topics needed for preparation of a company. The questions will be set by the sponsor company."
           isComingSoon
-          registerLink='https://docs.google.com/forms/d/e/1FAIpQLSdwuA5TUWwnUkw2Q0ELgXnA4htv5xrpCYDRNbd2oAA4qKxEMg/viewform?usp=dialog'
+          Register_Link ='https://docs.google.com/forms/d/e/1FAIpQLSdwuA5TUWwnUkw2Q0ELgXnA4htv5xrpCYDRNbd2oAA4qKxEMg/viewform?usp=dialog'
+          More_Link='https://google.com'
         />
       </BentoTilt>
 
