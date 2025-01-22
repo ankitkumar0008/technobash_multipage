@@ -3,7 +3,7 @@ import "./Contact.css"
 
 const Contact = () => {
   const gridImages = ["/img/shanacoder.png"];
-
+  const linkArray = ["https://shanacoder.com/"];
   return (
     <div id="contact" className="my-20 min-h-96 w-screen px-10">
       <div className="relative rounded-lg bg-black py-64 text-blue-50 -mx-10 sponser_padd">
@@ -24,11 +24,13 @@ const Contact = () => {
               key={index}
               className="overflow-hidden rounded-lg border border-gray-700 shadow-lg max-w-xs"
             >
+              <a href={linkArray[index]} target="_blank">
               <img
                 src={image}
                 alt={`Grid ${index + 1}`}
                 className="w-full h-full object-cover"
               />
+              </a>
             </div>
           ))}
         </div>
