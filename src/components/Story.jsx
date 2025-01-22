@@ -11,16 +11,16 @@ const FloatingImage = () => {
   // );
 
   const [departmenthead, setdepartmenthead] = useState(
-    Array.from({ length: 2 }, (_, i) => `/img/departmenthead-${i + 1}.jpeg`)
+    Array.from({ length: 12 }, (_, i) => `/img/departmenthead-${i + 1}.jpeg`)
   );
 
   const [eventCoord, seteventCoord] = useState(
-    Array.from({ length: 2 }, (_, i) => `/img/eventCoord-${i + 1}.jpeg`)
+    Array.from({ length: 7 }, (_, i) => `/img/eventCoord-${i + 1}.jpeg`)
   );
 
 
   const [eventTeam, seteventTeam] = useState(
-    Array.from({ length: 2 }, (_, i) => `/img/eventTeam-${i + 1}.jpeg`)
+    Array.from({ length: 9 }, (_, i) => `/img/eventTeam-${i + 1}.jpeg`)
   );
   const [isLoading, setIsLoading] = useState(false);
 
