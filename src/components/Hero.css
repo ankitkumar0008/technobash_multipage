@@ -9,3 +9,14 @@
         background-color: black;
     }
 }
+
+.gsmcoe_landing_txt{
+    margin-top: 10rem;
+}
+
+
+@media screen and (max-width:440px) {
+    .hero-heading{
+        font-size:6rem;
+    }
+}

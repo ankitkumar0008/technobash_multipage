@@ -13,3 +13,17 @@
 .indicator-line{
     height: 10px;
 }
+
+.nav_mobile_register{
+    display: none;
+}
+
+@media screen and (max-width:767px){
+    .nav_mobile_register{
+        display: block;
+    } 
+
+    .main_black_nav{
+        height: 7rem;
+    }
+}

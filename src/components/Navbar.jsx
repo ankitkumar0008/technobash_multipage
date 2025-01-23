@@ -66,7 +66,7 @@ const NavBar = () => {
   return (
     <div
       ref={navContainerRef}
-      className="fixed inset-x-0 top-4 z-50 h-20 border-none transition-all duration-700 sm:inset-x-6"
+      className="fixed inset-x-0 top-4 z-50 h-20 border-none transition-all duration-700 sm:inset-x-6 main_black_nav"
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
@@ -87,6 +87,15 @@ const NavBar = () => {
                   {item}
                 </a>
               ))}
+            </div>
+
+            <div className="nav_mobile_register">
+                <a
+                  href={`#register`}
+                  className="nav-hover-btn nav_click"
+                >
+                  Register
+                </a>
             </div>
 
             <button

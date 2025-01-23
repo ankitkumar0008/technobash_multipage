@@ -120,7 +120,7 @@ export const BentoCard = ({
               }}
             />
             {/* <TiLocationArrow className="relative z-20" /> */}
-            <p className="relative z-20 text-white">Registration</p>
+            <p className="relative z-20 text-white btn_text_bento_card">Registration</p>
           </a>
 
 
@@ -144,7 +144,7 @@ export const BentoCard = ({
               }}
             />
             {/* <TiLocationArrow className="relative z-20" /> */}
-            <p className="relative z-20 text-white">More ...</p>
+            <p className="relative z-20 text-white btn_text_bento_card">More ...</p>
           </a>
         </div>
       </div>
