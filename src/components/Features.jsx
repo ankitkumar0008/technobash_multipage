@@ -62,6 +62,10 @@ export const BentoCard = ({
     });
   };
 
+  const openPDF = (reflink) => {
+    window.open(reflink, '_blank'); // Use the relative path if in public folder
+  };
+
   const handleMouseEnter = () => setHoverOpacity(1);
   const handleMouseLeave = () => setHoverOpacity(0);
 
@@ -119,8 +123,11 @@ export const BentoCard = ({
             <p className="relative z-20 text-white">Registration</p>
           </a>
 
+
+              {/* More button */}
           <a
-            href={More_Link}
+            onClick={() => openPDF(More_Link)}
+            // href={More_Link}
             target="_blank"
             rel="noopener noreferrer"
             className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
@@ -176,7 +183,7 @@ const Features = () => (
           description="PREP-A-THON is a hackathon that focuses on basic interview aspects for the company to hire. This event will contain all the topics needed for preparation of a company. The questions will be set by the sponsor company."
           isComingSoon
           Register_Link="https://docs.google.com/forms/d/e/1FAIpQLSdwuA5TUWwnUkw2Q0ELgXnA4htv5xrpCYDRNbd2oAA4qKxEMg/viewform?usp=dialog"
-          More_Link="https://google.com"
+          More_Link="/pdf/prepathon.pdf"
         />
       </BentoTilt>
 
