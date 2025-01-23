@@ -5,13 +5,13 @@ import Features from "./components/Features";
 import Story from "./components/Story";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import OpenInChromeBanner from "./components/OpenInChromeBanner";
+import OpenInBrowserPrompt from "./components/OpenInChromeBanner";
 
 
 function App() {
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden">
-      <OpenInChromeBanner />
+      <OpenInBrowserPrompt />
       <NavBar />
       <Hero />
       <About />

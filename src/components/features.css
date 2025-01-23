@@ -84,6 +84,15 @@
     .ag-courses-item_bg {
       height: 150px;
     }
+
+    .Buttons_cards a{
+      width: 180px !important;
+      height: 25px;
+    }
+
+    .btn_text_bento_card{
+      font-size: 10px;
+    }
   }
   
   .Buttons_cards{
