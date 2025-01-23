@@ -324,7 +324,7 @@ Details of these rounds will be revealed on the day."
             description="Dive into the world of streaming and compete with your content creation skills."
             isComingSoon
             Register_Link="https://docs.google.com/forms/d/e/1FAIpQLSe-OYIghaqr8w6F-Qp77azcvYqz5E0MbbDLQT5FHZrf4zW63Q/viewform?usp=dialog"
-            More_Link="/pdf/prepathon.pdf"
+            More_Link="https://technobash.shanacoder.com"
           />
         </BentoTilt>
       </div>
