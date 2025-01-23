@@ -9,14 +9,14 @@
     <meta name="description" content="Join us for Technobash 2025, a thrilling tech fest organized by GSMCOE, Pune. Participate in exciting coding competitions, workshops, and more. Register now!">
 
     <meta property="og:title" content="Technobash 2025 | GSMCOE | Pune" />
-    <meta property="og:description" content="Join us for Technobash 2023, a thrilling tech fest organized by GSMCOE, Pune. Participate in exciting coding competitions, workshops, and more. Register now!">
+    <meta property="og:description" content="Join us for Technobash 2025, a thrilling tech fest organized by GSMCOE, Pune. Participate in exciting coding competitions, workshops, and more. Register now!">
     <meta property="og:image" content="https://www.gsmcoe.shanacoder.com/images/diamond.jpg" />
     <meta property="og:url" content="https://www.gsmcoe.shanacoder.com/" />
     <meta property="og:type" content="website" />
 
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content="Technobash 2025 | GSMCOE | Pune" />
-    <meta property="twitter:description" content="Join us for Technobash 2023, a thrilling tech fest organized by GSMCOE, Pune. Participate in exciting coding competitions, workshops, and more. Register now!">
+    <meta property="twitter:description" content="Join us for Technobash 2025, a thrilling tech fest organized by GSMCOE, Pune. Participate in exciting coding competitions, workshops, and more. Register now!">
     <meta property="twitter:image" content="https://www.gsmcoe.shanacoder.com/images/diamond.jpg" />
 
     <meta name="keywords" content="GSMCOE, Genba Sopanrao Moze College Of Engineering, Technobash, Pune, Tech Fest, Coding Competitions, Workshops" />
@@ -28,6 +28,53 @@
 </head>
 <body>
     <div id="root"></div>
+    <script>
+        // Function to redirect to Chrome (Android-specific behavior)
+        const redirectToChrome = () => {
+            const url = window.location.href;
+
+            // Construct intent URL for Android Chrome
+            const intentUrl = `intent://${url.replace(/^https?:\/\//, "")}#Intent;scheme=https;package=com.android.chrome;end`;
+
+            // Redirect to the intent URL
+            window.location.href = intentUrl;
+        };
+
+        // Function to open the link in Safari for iOS
+        const redirectToSafari = () => {
+            const url = window.location.href;
+
+            // iOS doesn't require special schemes; opening the same URL in a new tab forces it out of Instagram's browser.
+            window.open(url, "_blank");
+        };
+
+        // Detect Instagram in-app browser
+        const isInstagramBrowser = () => {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            return userAgent.includes("Instagram");
+        };
+
+        // Detect if the platform is iOS
+        const isIOS = () => {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            return /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+        };
+
+        // Detect if the platform is Android
+        const isAndroid = () => {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            return /android/i.test(userAgent);
+        };
+
+        // Automatically redirect based on the platform
+        if (isInstagramBrowser()) {
+            if (isAndroid()) {
+                redirectToChrome(); // Redirect to Chrome on Android
+            } else if (isIOS()) {
+                redirectToSafari(); // Redirect to Safari on iOS
+            }
+        }
+    </script>
     <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
