@@ -183,7 +183,7 @@ const Features = () => (
           description="PREP-A-THON is a hackathon that focuses on basic interview aspects for the company to hire. This event will contain all the topics needed for preparation of a company. The questions will be set by the sponsor company."
           isComingSoon
           Register_Link="https://docs.google.com/forms/d/e/1FAIpQLSdwuA5TUWwnUkw2Q0ELgXnA4htv5xrpCYDRNbd2oAA4qKxEMg/viewform?usp=dialog"
-          More_Link="/pdf/prepathon.pdf"
+          More_Link="/pdf/PREPATHON.pdf"
         />
       </BentoTilt>
 
@@ -205,7 +205,7 @@ Two ultimate champions will rise victorious"
             description="Come join us for the Battle Royale and show us your amazing gaming skills and win cash prizes."
             isComingSoon
             Register_Link="https://forms.gle/CzKoofPv3HKyayZp8"
-            More_Link="https://google.com"
+            More_Link="/pdf/prepathon.pdf"
           ></BentoCard>
         </BentoTilt>
 
@@ -224,7 +224,7 @@ Let the battlegrounds decide who truly reigns supreme!"
             description="Solve challenging clues and navigate through obstacles to win."
             isComingSoon
             Register_Link="https://forms.gle/VDLC3MzevbzS34EWA"
-            More_Link="https://google.com"
+            More_Link="/pdf/IT.pdf"
           />
         </BentoTilt>
 
@@ -240,7 +240,7 @@ Let the battlegrounds decide who truly reigns supreme!"
             description="To create a website with innovative and creative designs."
             isComingSoon
             Register_Link="https://docs.google.com/forms/d/e/1FAIpQLSfF-Qo7FKf02O1gJ4p6uuSHWEf6dvIyZnFyopqVjSftEfNlSw/viewform?usp=header"
-            More_Link="https://google.com"
+            More_Link="/pdf/AIML.pdf"
           />
         </BentoTilt>
 
@@ -252,7 +252,7 @@ Let the battlegrounds decide who truly reigns supreme!"
             description="Come join us for a thrilling coding competition to solve challenging problems and showcase your programming skills."
             isComingSoon
             Register_Link="https://forms.gle/6kKnUmmhwVvz856x6"
-            More_Link="https://google.com"
+            More_Link="/pdf/MBA.pdf"
           />
         </BentoTilt>
 
@@ -280,7 +280,7 @@ Details of these rounds will be revealed on the day."
             description="Unleash your artistic creativity in this hands-on crafting event."
             isComingSoon
             Register_Link="https://forms.gle/oVmqPLC72wP2oy6a8"
-            More_Link="https://google.com"
+            More_Link="/pdf/ENTC.pdf"
           />
         </BentoTilt>
 
@@ -294,18 +294,23 @@ Details of these rounds will be revealed on the day."
             description="Build and program robots to compete in thrilling challenges."
             isComingSoon
             Register_Link="https://forms.gle/k1wVeQVZSXMveYnP7"
-            More_Link="https://google.com"
+            More_Link="/pdf/MCA.pdf"
           />
         </BentoTilt>
         <BentoTilt className="bento-tilt_1 parallelchild row-span-1 md:col-span-1 md:row-span-2 cardL">
           <BentoCard
             src="videos/Civilcatwars.mp4"
             title={<>Cat-War</>}
-            content="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham"
+            content="Each participant needs to draw a common given drawing in specified duration
+                    Specific time will be provided to each participant. 
+                    Slots will be conveyed on 3rd & 4th Feb 2025.
+                    Jury will evaluated each participant’s drawing
+                    Depending on number of participants, number of rounds will be decided
+                    A final round will be conducted on 4th Feb 2025"
             description="Showcase your culinary skills and compete to win exciting prizes."
             isComingSoon
-            Register_Link="https://docs.google.com/forms/d/e/1FAIpQLSe-OYIghaqr8w6F-Qp77azcvYqz5E0MbbDLQT5FHZrf4zW63Q/viewform?usp=dialog"
-            More_Link="https://google.com"
+            Register_Link="https://docs.google.com/forms/d/e/1FAIpQLSfcSfgBbHdJDsTyb9tpqdKwlLEB8U4_aw9xrM7mPk6SE0h4dw/viewform?usp=header"
+            More_Link="/pdf/CATWAR.pdf"
           />
         </BentoTilt>
 
@@ -314,14 +319,12 @@ Details of these rounds will be revealed on the day."
             src="videos/feature-3.mp4"
             title={<>Ecovision 2k25</>}
             content="Solutions for Plastic Pollution
-
-* Our Land, Our Future: Generation Restoration
-
-* Land Restoration: Desertification & Drought Resilience"
+                    * Our Land, Our Future: Generation Restoration
+                    * Land Restoration: Desertification & Drought Resilience"
             description="Dive into the world of streaming and compete with your content creation skills."
             isComingSoon
             Register_Link="https://docs.google.com/forms/d/e/1FAIpQLSe-OYIghaqr8w6F-Qp77azcvYqz5E0MbbDLQT5FHZrf4zW63Q/viewform?usp=dialog"
-            More_Link="https://google.com"
+            More_Link="/pdf/prepathon.pdf"
           />
         </BentoTilt>
       </div>

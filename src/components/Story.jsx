@@ -6,25 +6,21 @@ import "./Story.css";
 
 const FloatingImage = () => {
   const frameRef = useRef(null);
-  // const [images, setImages] = useState(
-  //   Array.from({ length: 10 }, (_, i) => `/img/gallery-${i + 1}.webp`)
-  // );
 
-  const [departmenthead, setdepartmenthead] = useState(
+  const [departmenthead, setDepartmenthead] = useState(
     Array.from({ length: 12 }, (_, i) => `/img/departmenthead-${i + 1}.jpeg`)
   );
 
-  const [eventCoord, seteventCoord] = useState(
+  const [eventCoord, setEventCoord] = useState(
     Array.from({ length: 7 }, (_, i) => `/img/eventCoord-${i + 1}.jpeg`)
   );
 
-
-  const [eventTeam, seteventTeam] = useState(
+  const [eventTeam, setEventTeam] = useState(
     Array.from({ length: 9 }, (_, i) => `/img/eventTeam-${i + 1}.jpeg`)
   );
+
   const [isLoading, setIsLoading] = useState(false);
 
-  // Handle mouse move for 3D effect
   const handleMouseMove = (e) => {
     const { clientX, clientY } = e;
     const element = frameRef.current;
@@ -63,41 +59,6 @@ const FloatingImage = () => {
     }
   };
 
-  // Load more images when scrolling
-  const loadMoreImages = () => {
-    if (isLoading) return;
-
-    setIsLoading(true);
-
-    setTimeout(() => {
-      setImages((prevImages) => [
-        ...prevImages,
-        ...Array.from(
-          { length: 10 },
-          (_, i) => `/img/gallery-${prevImages.length + i + 1}.webp`
-        ),
-      ]);
-      setIsLoading(false);
-    }, 1000); // Simulated API call delay
-  };
-
-  // Handle scroll event
-  useEffect(() => {
-    const handleScroll = () => {
-      if (
-        window.innerHeight + window.scrollY >=
-        document.documentElement.scrollHeight - 100
-      ) {
-        // loadMoreImages();
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Cleanup
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [isLoading]);
-
   return (
     <div className="layer">
       <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
@@ -122,7 +83,6 @@ const FloatingImage = () => {
                       onMouseLeave={handleMouseLeave}
                       onMouseUp={handleMouseLeave}
                       onMouseEnter={handleMouseLeave}
-                      //src="/img/entrance.webp"
                       alt="entrance.webp"
                       className="object-contain"
                     />
@@ -133,21 +93,19 @@ const FloatingImage = () => {
           </div>
         </div>
       </div>
-      {/* Dynamically Rendered Images */}
-      {/* <div className="mt-10 w-full flex flex-wrap justify-center gap-4"> */}
+
+      {/* Department Heads Section */}
       <div className="firstheading">
         <AnimatedTitle
           title="Department Heads"
           containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
         />
       </div>
-      <div class="stock-ticker">
+      <div className="stock-ticker">
         <ul>
           {departmenthead.map((image, index) => (
-            <li>
+            <li key={index}>
               <img
-                // class=""
-                key={index}
                 src={image}
                 alt={`gallery-${index + 1}.webp`}
                 className="w-60 h-60 object-cover rounded-lg shadow-lg Rishi_img"
@@ -158,10 +116,8 @@ const FloatingImage = () => {
 
         <ul>
           {departmenthead.map((image, index) => (
-            <li>
+            <li key={index}>
               <img
-                // class=""
-                key={index}
                 src={image}
                 alt={`gallery-${index + 1}.webp`}
                 className="w-60 h-60 object-cover rounded-lg shadow-lg Rishi_img"
@@ -170,21 +126,19 @@ const FloatingImage = () => {
           ))}
         </ul>
       </div>
-      <div className="firstheading2"> 
-  <AnimatedTitle
-    title="Event co<b>-</b>ordinators"
-    containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
-  />
-</div>
 
-
-      <div class="stock-ticker2">
+      {/* Event Coordinators Section */}
+      <div className="firstheading2">
+        <AnimatedTitle
+          title="Event co<b>-</b>ordinators"
+          containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
+        />
+      </div>
+      <div className="stock-ticker2">
         <ul>
           {eventCoord.map((image, index) => (
-            <li>
+            <li key={index}>
               <img
-                // class=""
-                key={index}
                 src={image}
                 alt={`gallery-${index + 1}.webp`}
                 className="w-60 h-60 object-cover rounded-lg shadow-lg Rishi_img"
@@ -195,10 +149,8 @@ const FloatingImage = () => {
 
         <ul>
           {eventCoord.map((image, index) => (
-            <li>
+            <li key={index}>
               <img
-                // class=""
-                key={index}
                 src={image}
                 alt={`gallery-${index + 1}.webp`}
                 className="w-60 h-60 object-cover rounded-lg shadow-lg Rishi_img"
@@ -207,19 +159,19 @@ const FloatingImage = () => {
           ))}
         </ul>
       </div>
+
+      {/* Event Teams Section */}
       <div className="firstheading3">
         <AnimatedTitle
           title="Event Teams"
           containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
         />
       </div>
-      <div class="stock-ticker3">
+      <div className="stock-ticker3">
         <ul>
           {eventTeam.map((image, index) => (
-            <li>
+            <li key={index}>
               <img
-                // class=""
-                key={index}
                 src={image}
                 alt={`gallery-${index + 1}.webp`}
                 className="w-60 h-60 object-cover rounded-lg shadow-lg Rishi_img"
@@ -230,10 +182,8 @@ const FloatingImage = () => {
 
         <ul>
           {eventTeam.map((image, index) => (
-            <li>
+            <li key={index}>
               <img
-                // class=""
-                key={index}
                 src={image}
                 alt={`gallery-${index + 1}.webp`}
                 className="w-60 h-60 object-cover rounded-lg shadow-lg Rishi_img"
