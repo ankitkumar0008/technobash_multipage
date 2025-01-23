@@ -272,7 +272,7 @@ Round 2: Elimination Round
 Details of these rounds will be revealed on the day."
             description="Unleash your artistic creativity in this hands-on crafting event."
             isComingSoon
-            Register_Link="https://docs.google.com/forms/d/e/1FAIpQLSdwuA5TUWwnUkw2Q0ELgXnA4htv5xrpCYDRNbd2oAA4qKxEMg/viewform?usp=dialog"
+            Register_Link="https://forms.gle/oVmqPLC72wP2oy6a8"
             More_Link="https://google.com"
           />
         </BentoTilt>
