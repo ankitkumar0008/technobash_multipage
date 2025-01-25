@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 import Button from "./Button";
-import AnimatedTitle from "./AnimatedTitle";
+import AnimatedTitle, { AnimatedTitle3 } from "./AnimatedTitle";
 import "./Story.css";
 
 const FloatingImage = () => {
@@ -63,33 +63,11 @@ const FloatingImage = () => {
     <div className="layer">
       <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
         <div className="flex size-full flex-col items-center py-10 pb-24">
-          <p className="font-general text-sm uppercase md:text-[10px]">
-            the multiversal ip world
-          </p>
-
           <div className="relative size-full">
-            <AnimatedTitle
+            <AnimatedTitle3 
               title="Our technobash </br> team "
-              containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
+              containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10 text-[100px]"
             />
-
-            <div className="story-img-container">
-              <div className="story-img-mask">
-                <div className="story-img-content">
-                  <div className="flex flex-row overflow-hidden w-auto">
-                    <img
-                      ref={frameRef}
-                      onMouseMove={handleMouseMove}
-                      onMouseLeave={handleMouseLeave}
-                      onMouseUp={handleMouseLeave}
-                      onMouseEnter={handleMouseLeave}
-                      alt="entrance.webp"
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

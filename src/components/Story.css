@@ -1,6 +1,6 @@
 .stock-ticker {
     position :absolute;
-    bottom: 65%;
+    bottom: 60%;
     font-size: 15px;
     padding-block: 8px;
     width: 100%;
@@ -13,7 +13,7 @@
 }
 .firstheading{
   position :absolute;
-  bottom: 80%;
+  bottom: 75%;
   color: #fff;
   font-size: 20px;
 }
@@ -46,7 +46,7 @@
 }
 .firstheading2 {
   position: absolute;
-  bottom: 60%;
+  bottom: 50%;
   right: 0; /* Aligns the text container to the right */
   color: #fff;
   font-size: 30px;
@@ -58,7 +58,7 @@
 
 .stock-ticker2 {
   position :absolute;
-  bottom: 45%;
+  bottom: 35%;
   font-size: 15px;
   padding-block: 8px;
 
@@ -86,13 +86,13 @@
 }
 .firstheading3{
   position :absolute;
-  bottom: 40%;
+  bottom: 25%;
   color: #fff;
   font-size: 50px;
 }
 .stock-ticker3 {
   position :absolute;
-  bottom: 25%;
+  bottom: 10%;
   font-size: 15px;
   padding-block: 8px;
 
