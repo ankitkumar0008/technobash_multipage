@@ -224,7 +224,7 @@ Let the battlegrounds decide who truly reigns supreme!"
             description="Solve challenging clues and navigate through obstacles to win."
             isComingSoon
             Register_Link="https://forms.gle/VDLC3MzevbzS34EWA"
-            More_Link="/pdf/IT.pdf"
+            More_Link="/pdf/IT_TECHNOBASH.pdf"
           />
         </BentoTilt>
 
