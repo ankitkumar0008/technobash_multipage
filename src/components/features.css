@@ -1,314 +1,321 @@
-.prepathon{
+.prepathon {
   height: 500px;
 }
+
 .ag-courses-item_bg {
-    background-size: cover;
-    background-position: center;
-    height: 180px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-  }
-  
-.main_card_body{
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.main_card_body {
   height: 1500px;
 }
-  .ag-courses-item_link {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent overlay */
-    padding: 20px;
-    color: white;
-    text-align: center;
-    border-radius: 12px;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .ag-courses-item_title {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    line-height: 1.5;
-  }
-  
-  .ag-courses-item_date-box {
-    font-size: 0.9rem;
-    color: #f9b234;
-    margin-top: 10px;
-  }
-  
+
+.ag-courses-item_link {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Semi-transparent overlay */
+  padding: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.ag-courses-item_title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.ag-courses-item_date-box {
+  font-size: 0.9rem;
+  color: #f9b234;
+  margin-top: 10px;
+}
+
+.ag-courses_item {
+  background-color: #121212;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 15px;
+  position: relative;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.ag-courses_item:hover {
+  transform: translateY(-5px);
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #f9b234;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .ag-courses_item {
-    background-color: #121212;
-    border-radius: 20px;
-    overflow: hidden;
-    padding: 15px;
-    position: relative;
-    min-height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s ease;
+    flex-basis: calc(50% - 20px);
   }
-  
-  .ag-courses_item:hover {
-    transform: translateY(-5px);
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 15px;
-  }
-  
-  .social-icons a {
-    font-size: 24px;
-    color: white;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .social-icons a:hover {
-    color: #f9b234;
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .ag-courses_item {
-      flex-basis: calc(50% - 20px);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .ag-courses_item {
-      flex-basis: 100%;
-    }
-  
-    .ag-courses-item_bg {
-      height: 150px;
-    }
+}
 
-    .Buttons_cards a{
-      width: 180px !important;
-      height: 25px;
-    }
-
-    .btn_text_bento_card{
-      font-size: 10px;
-    }
-  }
-  
-  .Buttons_cards{
-    display:flex;
-    gap: 10px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    width: 80%;
+@media (max-width: 480px) {
+  .ag-courses_item {
+    flex-basis: 100%;
   }
 
-  .Buttons_cards a{
-    width: 80px;
-    display: flex;
-    justify-content: center;
-    border-color: #ffffff96
+  .ag-courses-item_bg {
+    height: 150px;
   }
 
-  .bento-title{
-    text-align: start;
+  .Buttons_cards a {
+    width: 180px !important;
+    height: 25px;
   }
 
-  .card_whole_body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
+  .btn_text_bento_card {
+    font-size: 10px;
   }
 
-  /* ------------------------------------------------------------------------------------------------------------------------ */
-  :root {
-    --background-color: #ece0e8;
-    --color-primary-light: #ca3782;
-    --color-primary-dark: #1e0b36;
-    --color-black: #000;
-    --color-gray-dark: #aaa;
-    --color-gray-light: #eee;
-    --color-white: #fff;
-  }
-  
-  *,
-  *::after,
-  *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 62.5%;
-  }
-  
-  @media (max-width: 75em) {
-    html {
-      font-size: 56.25%;
-    }
-  }
-  
-  @media (max-width: 56.25em) {
-    html {
-      font-size: 50%;
-    }
-  }
-  
-  @media (min-width: 112.5em) {
-    html {
-      font-size: 75%;
-    }
-  }
-  
-  body {
-    height: 100vh;
-    background-color: var(--background-color);
-  }
-  
-  .artboard {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem;
-    height: 100%;
-    position: relative;
-  }
-  
-  @media (max-width: 37.5em) {
-    .artboard {
-      padding: 1rem;
-    }
-  }
-  
-  .card {
-    flex: initial;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    perspective: 200rem;
-  }
-  
-  .card__side {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    transition: all 0.8s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    backface-visibility: hidden;
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 2rem 6rem rgba(var(--color-black), 0.15);
-  }
-  
-
-  
-  .card__side--back {
-    background-color: var(--color-white);
-    transform: rotateY(180deg);
-  }
-  
-  .card:hover .card__side--back {
-    transform: rotateY(0);
-  }
-  
-  .card:hover .card__side--front {
-    transform: rotateY(-180deg);
-  }
-  
-  .card__theme {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-    height: 100%;
-  }
-  
-  .card__theme-box {
-    color: var(--color-white);
-    margin-bottom: 8rem;
-  }
-  
-  .card__subject {
-    font-family: "Inconsolata", monospace;
-    letter-spacing: 0.8rem;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-  }
-  
-  .card__title {
-    font-family: "VT323", monospace;
-    text-transform: uppercase;
-    font-size: 6rem;
-    font-weight: 100;
-  }
-  
-  .card__cover {
-    position: relative;
-    background-size: cover;
-    height: 14rem;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background-image: linear-gradient(
-        to top right,
-        rgba(var(--color-primary-dark), 0.65),
-        rgba(var(--color-primary-light), 0.65)
-      ),
-      url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
-  }
-  
-  .card__heading {
-    text-align: center;
-    color: var(--color-white);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 75%;
-  }
-  
-  .card__heading-span {
-    font-family: "VT323", monospace;
-    font-size: 4.2rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding: 1rem 1.5rem;
-    color: var(--color-white);
-  }
-  
   .card__details {
-    font-family: "Inconsolata", monospace;
-    padding: 4rem 2rem;
+    font-size: 3vw;
+  }
+}
 
+.Buttons_cards {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 80%;
+}
+
+.Buttons_cards a {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  border-color: #ffffff96
+}
+
+.bento-title {
+  text-align: start;
+}
+
+.card_whole_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+:root {
+  --background-color: #ece0e8;
+  --color-primary-light: #ca3782;
+  --color-primary-dark: #1e0b36;
+  --color-black: #000;
+  --color-gray-dark: #aaa;
+  --color-gray-light: #eee;
+  --color-white: #fff;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
   }
-  
-  .card__details ul {
-    list-style: none;
-    width: 80%;
-    margin: 0 auto;
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
   }
-  
-  .card__details li {
-    text-align: center;
-    font-size: 1.8rem;
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.artboard {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  height: 100%;
+  position: relative;
+}
+
+@media (max-width: 37.5em) {
+  .artboard {
     padding: 1rem;
   }
-  
-  .card__details li:not(:last-child) {
-    border-bottom: 1px solid var(--color-gray-light);
-  }
+}
+
+.card {
+  flex: initial;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  perspective: 200rem;
+}
+
+.card__side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 2rem 6rem rgba(var(--color-black), 0.15);
+}
+
+
+
+.card__side--back {
+  background-color: var(--color-white);
+  transform: rotateY(180deg);
+}
+
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
+
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+
+.card__theme {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}
+
+.card__theme-box {
+  color: var(--color-white);
+  margin-bottom: 8rem;
+}
+
+.card__subject {
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 0.8rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.card__title {
+  font-family: "VT323", monospace;
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 100;
+}
+
+.card__cover {
+  position: relative;
+  background-size: cover;
+  height: 14rem;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-image: linear-gradient(to top right,
+      rgba(var(--color-primary-dark), 0.65),
+      rgba(var(--color-primary-light), 0.65)),
+    url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+}
+
+.card__heading {
+  text-align: center;
+  color: var(--color-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+}
+
+.card__heading-span {
+  font-family: "VT323", monospace;
+  font-size: 4.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  color: var(--color-white);
+}
+
+.card__details {
+  font-family: "Inconsolata", monospace;
+  font-size: 15px;
+  padding: 4rem 2rem;
+
+}
+
+.card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card__details li {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.card__details li:not(:last-child) {
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
 /*   
   @media (max-width: 37.5em) {
     .card {
@@ -355,52 +362,61 @@
       font-size: 4rem;
     }
   } */
-  @media screen and (max-width:767px) {
-    .main_card_body{
-      height: 3000px;
-    }
-
-    .cardL{
-      width:90vw;
-      margin-right: auto;
-      margin-left: 0px;
-      height: 50vw;
-
-    }
-
-    .cardR{
-      width: 90vw;
-      margin-left: auto;
-      margin-right: 0px;
-      height: 50vw;
-    }
+@media screen and (max-width:767px) {
+  .main_card_body {
+    height: 3000px;
   }
 
-  @media screen and (max-width:600px) {
-    #events{
-      height: 100%;
-    }
+  .cardL {
+    width: 90vw;
+    margin-right: auto;
+    margin-left: 0px;
+    height: 50vw;
 
-    .prepathon{
-      height: 400px;
-    }
-
-    .main_card_body{
-      height: 790vw;
-    }
-
-    .cardL{
-      width:90vw;
-      margin-right: auto;
-      margin-left: 0px;
-      height: 90vw;
-
-    }
-
-    .cardR{
-      width: 90vw;
-      margin-left: auto;
-      margin-right: 0px;
-      height: 90vw;
-    }
   }
+
+  .cardR {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: 0px;
+    height: 50vw;
+  }
+}
+
+@media screen and (max-width:600px) {
+  #events {
+    height: 100%;
+  }
+
+  .prepathon {
+    height: 400px;
+  }
+
+  .main_card_body {
+    height: 790vw;
+  }
+
+  .cardL {
+    width: 90vw;
+    margin-right: auto;
+    margin-left: 0px;
+    height: 90vw;
+
+  }
+
+  .cardR {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: 0px;
+    height: 90vw;
+  }
+}
+
+
+
+
+.Buttons_cards a {
+  width: 150px !important;
+  height: 30px;
+  font-size: 14px;
+}

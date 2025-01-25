@@ -86,13 +86,13 @@
 }
 .firstheading3{
   position :absolute;
-  bottom: 35%;
+  bottom: 40%;
   color: #fff;
   font-size: 50px;
 }
 .stock-ticker3 {
   position :absolute;
-  bottom: 20%;
+  bottom: 25%;
   font-size: 15px;
   padding-block: 8px;
 

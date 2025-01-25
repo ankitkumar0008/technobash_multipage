@@ -124,7 +124,7 @@ export const BentoCard = ({
           </a>
 
 
-              {/* More button */}
+          {/* More button */}
           <a
             onClick={() => openPDF(More_Link)}
             // href={More_Link}
@@ -173,13 +173,8 @@ const Features = () => (
               prep-<b>a</b>-thon
             </>
           }
-          content="PREP-A-THON SAGA is a hackathon that focuses on basic interview aspects for the company to hire. This event will contain all the topics needed for preparation of a company. The questions will be as per the most simple and commonly asked questions in interviews, the event team will be responsible to integrate the questions in the gaming hackathon that is PREP-A-THON. There will be 6 stages to this Prep-a-thon:
-          Aptitude 
-          enigmaLogical 
-          cascadeBingo 
-          triviaTechsolve 
-          crosswordDebugging 
-          ParadoxCodeFlux"
+          content={`PREP-A-THON SAGA is a hackathon that focuses on basic interview aspects for the company to hire. This event will contain all the topics needed for preparation of a company. The questions will be as per the most simple and commonly asked questions in interviews, the event team will be responsible to integrate the questions in the gaming hackathon that is PREP-A-THON. There will be 6 stages to this Prep-a-thon:
+          1) Aptitude enigma, 2) Logical cascade, 3) Bingo trivia, 4) Techsolve crossword, 5) Debugging Paradox, 6) CodeFlux`}
           description="PREP-A-THON is a hackathon that focuses on basic interview aspects for the company to hire. This event will contain all the topics needed for preparation of a company. The questions will be set by the sponsor company."
           isComingSoon
           Register_Link="https://docs.google.com/forms/d/e/1FAIpQLSdwuA5TUWwnUkw2Q0ELgXnA4htv5xrpCYDRNbd2oAA4qKxEMg/viewform?usp=dialog"

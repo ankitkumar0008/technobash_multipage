@@ -163,7 +163,7 @@ const FloatingImage = () => {
       {/* Event Teams Section */}
       <div className="firstheading3">
         <AnimatedTitle
-          title="Event Teams"
+          title="Faculty Co<b>-</b>ordinators"
           containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
         />
       </div>

@@ -66,7 +66,7 @@ const NavBar = () => {
   return (
     <div
       ref={navContainerRef}
-      className="fixed inset-x-0 top-4 z-50 h-20 border-none transition-all duration-700 sm:inset-x-6 main_black_nav"
+      className="fixed inset-x-0 top-4 z-50 h-20 border-none transition-all duration-700 sm:inset-x-6 main_black_nav h-[6rem]"
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
@@ -92,9 +92,9 @@ const NavBar = () => {
                <a
                   key="1"
                   href={`/events`}
-                  className="nav-hover-btn nav_click"
+                  className=" nav_click events_technobash"
                 >
-                  Events
+                  EVENTS
                 </a>
                 <a
                  key="2"
