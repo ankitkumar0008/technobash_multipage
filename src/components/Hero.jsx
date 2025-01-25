@@ -101,15 +101,16 @@ const Hero = () => {
         className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
       >
         <div>
-          <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
+          <div className="mask-clip-path absolute-center absolute z-50 size-64 overflow-hidden rounded-lg">
             <VideoPreview>
               <div
-                onClick={handleMiniVdClick}
+                // onClick={handleMiniVdClick}
                 className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100"
               >
                 <video
                   ref={nextVdRef}
-                  src={getVideoSrc((currentIndex % totalVideos) + 1)}
+                  // src={getVideoSrc((currentIndex % totalVideos) + 1)}
+                  src="`videos/introvid-1.mp4"
                   loop
                   muted
                   id="current-video"
@@ -120,7 +121,7 @@ const Hero = () => {
             </VideoPreview>
           </div>
 
-          <video
+          {/* <video
             ref={nextVdRef}
             src={getVideoSrc(currentIndex)}
             loop
@@ -128,11 +129,12 @@ const Hero = () => {
             id="next-video"
             className="absolute-center invisible absolute z-20 size-64 object-cover object-center"
             onLoadedData={handleVideoLoad}
-          />
+          /> */}
           <video
-            src={getVideoSrc(
-              currentIndex === totalVideos - 1 ? 1 : currentIndex
-            )}
+            // src={getVideoSrc(
+            //   currentIndex === totalVideos - 1 ? 1 : currentIndex
+            // )}
+            src="videos/introvid-1.mp4"
             autoPlay
             loop
             muted
